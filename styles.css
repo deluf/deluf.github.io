@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    user-select: none;
+    background-color: white;
+    color: black;
+    font-family: Poppins, sans-serif;
+}
+
+.container-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+
+.project {
+    width: 700px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.project-info {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+
+
+.project-preview {
+    border-radius: 50px 0px 0px 0px;
+    border: 2px solid black;
+    margin-right: 2px;
+    width: 200px;
+    height: 200px;
+    background-color: white !important;
+}
+
+.laureandosi {
+    background: url(projects/laureandosi/preview.png) 50% 50% no-repeat;
+    background-size: 180px;
+}
+
+.chesspuzzles {
+    background: url(projects/chesspuzzles/preview.png) 50% 50% no-repeat;
+    background-size: 150px;
+}
+
+.codfish2000 {
+    background: url(projects/codfish2000/preview.png) 50% 50% no-repeat;
+    background-size: 150px;
+}
+
+.smartbuildings {
+    background: url(projects/smartbuildings/preview.png) 50% 50% no-repeat;
+    background-size: 155px;
+}
+
+
+.project-header {
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-date {
+    margin-left: 10px;
+}
+
+
+
+.project-description {
+    text-align: justify;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+.project-footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px 0px 0px 0px;
+}
+
+.project-link:last-child {
+    border-radius: 0px 0px 50px 0px;
+    border: none;
+}
+
+.project-link {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-right: 2px solid white;
+}
+
+.project-link:visited {
+    color: white;
+}
+
+.project-link:hover {
+    background-color: #444444;
+}
