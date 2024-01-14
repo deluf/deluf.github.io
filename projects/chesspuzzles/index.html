@@ -42,13 +42,13 @@
 
         <span class="subtitle-low-margin">Server side</span>    
     
-        <span class="limit justify paragraph">
+        <span class="limit justify margin">
             The <b>MySQL database</b> stores users, attemps and favourite puzzles (via json serialization)
             and is automatically created and populated by the <b>Java Persistence Api</b> with the values
             present in the json files inside the resources/init folder
         </span>
 
-        <span class="limit paragraph">
+        <span class="limit margin">
             The endpoints of <a href="https://www.chess.com/news/view/published-data-api">chess.com's api</a> used by the spring application are:<br>
             <ul>
                 <li><a href="https://api.chess.com/pub/puzzle/random">https://api.chess.com/pub/puzzle/random</a></li>
@@ -56,7 +56,7 @@
             </ul>
         </span>
 
-        <span class="limit justify paragraph">
+        <span class="limit justify margin">
             There is a <b>shared</b> (kind of) <b>package</b> between the client and the server called <i>shared</i> used 
             for the json serialization and de-serialization of HTTP requests. The endpoints exposed by the
             spring application are:
@@ -81,7 +81,7 @@
             <i>Note: Security was NOT a priority in this project (at least passwords are hashed)</i>
         </span>
 
-        <a class="project-link limit paragraph" href="../../">Go back to all the projects</a>
+        <a class="project-link limit big-margin" href="../../">Go back to all the projects</a>
 
         <div class="footer">
             <span>Handcrafted with ♡ using pure HTML/CSS/JS</span>
