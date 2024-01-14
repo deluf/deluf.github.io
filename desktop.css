@@ -67,7 +67,8 @@ a:visited {
 }
 
 .subtitle {
-    margin-top: 70px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -228,6 +229,10 @@ a:visited {
 
 .paragraph {
     margin-top: 20px;
+}
+
+.tiny-margin {
+    margin-top: 5px;
 }
 
 .subtitle-low-margin {
