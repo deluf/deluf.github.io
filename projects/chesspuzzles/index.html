@@ -2,13 +2,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChessPuzzles</title>
-    <link rel="stylesheet" href="../../styles.css">
+    <title>Francesco De Lucchini</title>
+    <link rel="stylesheet" media="only screen and (max-width: 759px)" href="../../mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 760px)" href="../../desktop.css">
+    <link rel="icon" type="image/x-icon" href="../../media/favicon.ico">
 </head>
-<body class="container-column">
-    <p class="title">ChessPuzzles</p>    
+<body>
 
+    <span class="mobile">Your device is too small to view this website</span>
+
+    <div class="vbox">
+
+        <span class="title">ChessPuzzles</span>
     
+        <p class="limit justify">
+            ChessPuzzles is a <b>Java</b> 11 <b>Spring</b> application which wraps <a href="https://www.chess.com/news/view/published-data-api">chess.com's puzzle api</a> for a <b>JavaFX</b> client
+        </p>
+    
+        <a class="project-link limit" href="https://github.com/deluf">Check out the full code on GitHub</a>
+
+        <span class="subtitle-low-margin">Client side</span>    
+
+        <img class="screenshot" src="auth.png" alt="Authentication screen">
+        
+        <img class="screenshot" src="main.png" alt="Main screen">
+
+        <span class="limit justify">
+            The board is an image (more on that later), the user writes the move he thinks
+            is best using <a href="https://en.wikipedia.org/wiki/Algebraic_notation_(chess)">algebraic chess notation</a>,
+            if he can't find it he can ask for an hint (the piece to move) or give up and see the solution
+        </span>
+        <img class="screenshot" src="play.png" alt="Play screen">
+        
+        <span class="limit justify">
+            Users can also add puzzles to favourites and play them again later
+        </span>
+        <img class="screenshot" src="fav.png" alt="Favourites screen">
+
+
+        <span class="subtitle-low-margin">Server side</span>    
+    
+        <span class="limit justify paragraph">
+            The <b>MySQL database</b> stores users, attemps and favourite puzzles (via json serialization)
+            and is automatically created and populated by the <b>Java Persistence Api</b> with the values
+            present in the json files inside the resources/init folder
+        </span>
+
+        <span class="limit paragraph">
+            The endpoints of <a href="https://www.chess.com/news/view/published-data-api">chess.com's api</a> used by the spring application are:<br>
+            <ul>
+                <li><a href="https://api.chess.com/pub/puzzle/random">https://api.chess.com/pub/puzzle/random</a></li>
+                <li><a href="https://www.chess.com/dynboard">https://www.chess.com/dynboard?fen=...&board=...&pieces=...</a></li>
+            </ul>
+        </span>
+
+        <span class="limit justify paragraph">
+            There is a <b>shared</b> (kind of) <b>package</b> between the client and the server called <i>shared</i> used 
+            for the json serialization and de-serialization of HTTP requests. The endpoints exposed by the
+            spring application are:
+            <pre>
+                GET  /puzzles/random
+                GET  /puzzles/draw?fen=...&board=...&pieces=...
+
+                POST /users/login
+                POST /users/register
+
+                GET  /users/{userId}/favourites/all
+                POST /users/{userId}/favourites/{favouriteId}/delete
+                POST /users/{userId}/favourites/{favouriteId}/mark-as-solved
+                POST /users/{userId}/favourites/{favouriteId}/mark-as-to-solve
+                
+                GET  /users/{userId}/attemps/afer?timestamp=...
+                POST /users/{userId}/attemps/add
+            </pre>
+        </span>
+
+        <span>
+            <i>Note: Security was NOT a priority in this project (at least passwords are hashed)</i>
+        </span>
+
+        <div class="footer">
+            <span>Handcrafted with ♡ using pure HTML/CSS/JS</span>
+            <a href="https://www.flaticon.com">Icons courtesy of Flaticon</a>
+        </div>
+
+    </div>
 
 </body>
 </html>

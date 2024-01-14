@@ -20,6 +20,11 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
 .mobile {
     visibility: collapse;
 }
@@ -204,4 +209,33 @@ a {
 
 .project-link:hover {
     background-color: #444444;
+}
+
+
+
+
+.screenshot {
+    width: 800px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.limit {
+    width: 700px;
+}
+
+.paragraph {
+    margin-top: 20px;
+}
+
+.subtitle-low-margin {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+ul {
+    margin: 0px;
 }
