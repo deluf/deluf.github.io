@@ -7,7 +7,6 @@
 
 html, body {
     width: 100%;
-    height: 100%;
     margin: 0;
 }
 
@@ -18,21 +17,73 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-.container-column {
+a {
+    text-decoration: none;
+}
+
+.hbox {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.vbox {
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 .title {
     font-size: 3rem;
+    margin-top: 40px;
     font-weight: 900;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.ironic {
+    opacity: .5;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+
+.subtitle {
+    margin-top: 70px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    margin-top: 50px;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+.footer a, .footer a:visited {
+    color: antiquewhite;
 }
 
 
 
 .project {
-    width: 700px;
+    width: 750px;
     border: 2px solid white;
     box-shadow: 0px 0px 3px black;
     border-radius: 50px 0px;
@@ -45,18 +96,6 @@ body {
     cursor: pointer;
     background-color: antiquewhite;
 }
-
-.project-info {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 500px;
-}
-
-
 
 .project-preview {
     border-radius: 50px 0px 0px 0px;
@@ -87,6 +126,13 @@ body {
     background-size: 155px;
 }
 
+.project-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+}
 
 .project-header {
     height: 50px;
@@ -107,15 +153,21 @@ body {
     margin-left: 10px;
 }
 
-
-
 .project-description {
     text-align: justify;
     padding: 10px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-
+.project-icons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .project-footer {
     height: 50px;
@@ -140,7 +192,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     border-right: 2px solid white;
 }
 
