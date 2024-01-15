@@ -34,10 +34,61 @@
         <span class="limit justify margin">
             The database stores the internal structure of buildings, the jobs carried out on them and their cost,
             the staff and the work shifts, the materials used and the warehouse, the sensors installed in the buildings and their measurements
-              and finally the possible calamitous events and the their effect on surrounding buildings.   
+              and finally the possible calamitous events and the their effect on surrounding buildings
+        </span>
+
+        <span class="subtitle-low-margin">Highlights</span>   
+
+        <span class="paragraph-no-margin">Calculating the area of any given building</span>
+
+        <div class="limit hbox tiny-margin">
+            <div class="vbox">
+                <span class="justify">
+                    The walls of the buildings are stored as segments in the Euclidean plane <pre style="display: inline;">[(X<sub>1</sub>, Y<sub>1</sub>), (X<sub>2</sub>, Y<sub>2</sub>)]</pre>,
+                    this means that using the <a href="https://en.wikipedia.org/wiki/Shoelace_formula">shoelace formula</a> we can calculate the area of any
+                    given building, and in the database there is a function which does just that
+                </span>
+  
+            </div>
+            <img width="350" style="margin-left: 20px;" src="shoelace.gif" alt="Shoelace formula animation">    
+        </div>
+
+        <span class="limit justtify">
+            In order for this to work we must: 
+            <ol style="margin: 0;">
+                <li>Only consider the polygon formed by the external walls of the building</li>
+                <li><b>Order the vertices of that polygon in either a clockwise or counter clockwise order</b></li>
+            </ol>
+        </span>
+
+        <span class="limit justify tiny-margin">
+            The first one is trivial, to achieve the second one we can simply start from a random point of 
+            the polygon and then query the walls' table to get the two adjacent points, if we keep track of
+            which points we already visited we will end up with either a clockwise or a counter clockwise order, depending
+            on the random choice made at the first point (the only in where we could have gone to either adjacent
+            point since neither of them was already visited)
         </span>
         
-        
+
+        <span class="paragraph-no-margin">Creating an svg plan of any building floor</span>
+
+        <div class="limit hbox tiny-margin">
+            <div class="vbox">
+                <span class="justify">
+                    The database contains a function which outputs a string representing the svg plan of any given building floor:
+                </span>
+                <ul style="margin-top: 10px;">
+                    <li><span style="color: #4aa1ff;">Blue</span> segments are windows</li>
+                    <li><span style="color: #3cc961;">Green</span> segments are doors</li>
+                    <li><span style="color: #aa6c49;">Brown</span> segments are generic openings</li>
+                    <li><span style="color: #c33232;">Red</span> dots are sensors</li>
+                </ul>
+            </div>
+            <img width="350" style="margin-left: 20px;" src="floor.png" alt="Floor plan">    
+        </div>
+
+
+
         <a class="link limit big-margin" href="../../">Go back to all the projects</a>
 
     </div>

@@ -236,6 +236,10 @@ a:visited {
     width: 700px;
 }
 
+.limit-half {
+    width: 350px;
+}
+
 .big-margin {
     margin-top: 40px;
 }
@@ -284,4 +288,10 @@ video {
 
 .link:hover {
     background-color: #444444;
+}
+
+.paragraph-no-margin {
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
