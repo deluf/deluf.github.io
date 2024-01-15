@@ -6,6 +6,8 @@
 }
 
 html, body {
+    height: 100%;
+    min-height: 100%;
     width: 100%;
     margin: 0;
 }
@@ -14,6 +16,8 @@ body {
     background-color: white;
     color: black;
     font-family: Poppins, sans-serif;
+    display: grid;
+    grid-template-rows: 0 1fr auto;
 }
 
 a {
@@ -262,4 +266,22 @@ ul {
 
 video {
     border: 2px solid black;
+}
+
+.link {
+    background-color: black;
+    color: white;
+    width: 700px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:visited {
+    color: white;
+}
+
+.link:hover {
+    background-color: #444444;
 }

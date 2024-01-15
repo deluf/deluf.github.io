@@ -22,7 +22,5 @@ body {
 }
 
 .vbox {
-    height: 0px;
-    width: 0px;
     visibility: collapse;
 }
