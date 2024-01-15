@@ -73,6 +73,11 @@ a:visited {
     font-weight: 900;
 }
 
+.paragraph {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -247,4 +252,14 @@ a:visited {
 
 ul {
     margin: 0px;
+}
+
+.note {
+    margin-top: 20px;
+    opacity: .5;
+    font-style: italic;
+}
+
+video {
+    border: 2px solid black;
 }
