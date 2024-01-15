@@ -6,6 +6,9 @@
     <link rel="stylesheet" media="only screen and (max-width: 759px)" href="../../mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 760px)" href="../../desktop.css">
     <link rel="icon" type="image/x-icon" href="../../media/favicon.ico">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -39,7 +42,7 @@
 
         <span class="subtitle-low-margin">Highlights</span>   
 
-        <span class="paragraph-no-margin">Calculating the area of any given building</span>
+        <span class="paragraph-no-margin">Calculate the area of any given building</span>
 
         <div class="limit hbox tiny-margin">
             <div class="vbox">
@@ -70,7 +73,7 @@
         </span>
         
 
-        <span class="paragraph-no-margin">Creating an svg plan of any building floor</span>
+        <span class="paragraph-no-margin">Create an svg plan of any building floor</span>
 
         <div class="limit hbox tiny-margin">
             <div class="vbox">
@@ -87,6 +90,33 @@
             <img width="350" style="margin-left: 20px;" src="floor.png" alt="Floor plan">    
         </div>
 
+
+        <span class="paragraph-no-margin">Approximation of earthquakes magnitude using accelerometers data</span>
+        
+        <span class="limit justify margin">
+            The database contains a stored procedure which approximates the magnitude of an earthquake using data collected
+            form accelerometers in nearby buildings
+        </span>
+
+        <span class="limit justify tiny-margin">
+            To <b>calculate the perceived magnitude of the earthquake by a given building</b> we can use the following table:
+        </span>
+        <img class="limit tiny-margin" src="pga-table.png" alt="PGA to Mercalli table">    
+
+        <span class="limit justify tiny-margin">
+            We can then use the perceived magnitude \(Mercalli(r)\) of a building distant \(r\) km from the epicenter to
+             approximate the intensity of the earthquake in its epicenter \(Mercalli_0\) using the following formula:
+        </span>
+        <span>
+            \( Mercalli(r) = \frac{Mercalli_0}{\left(\frac{r}{\mu} + 1\right)^2} \)
+        </span>
+        <span class="limit justify tiny-margin">
+            <ul>            
+                <li>\(\mu\) is the attenuation coefficient of the mechanical waves coming from the earthquake, by default 600</li>
+                <li>\(+ 1\) stops the function from going to \(+\infty\) for \(r\to0\)</li>
+                <li>The exponent 2 at the denominator accounts for the fact that the energy carried in mechanical waves attenuates quadratically with the distance from the epicenter</li>
+            </ul>
+        </span>
 
 
         <a class="link limit big-margin" href="../../">Go back to all the projects</a>
