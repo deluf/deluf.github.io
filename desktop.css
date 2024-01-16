@@ -144,6 +144,11 @@ a:visited {
     background-size: 155px;
 }
 
+.radioactive-decay {
+    background: url(projects/radioactive-decay/preview.png) 50% 50% no-repeat;
+    background-size: 150px;
+}
+
 .project-body {
     display: flex;
     justify-content: space-between;
