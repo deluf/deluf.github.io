@@ -124,6 +124,17 @@ a:visited {
     background-color: white !important;
 }
 
+.italian-flag {
+    background: url(media/italian-flag.png);
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .laureandosi {
     background: url(projects/laureandosi/preview.png) 50% 50% no-repeat;
     background-size: 180px;
