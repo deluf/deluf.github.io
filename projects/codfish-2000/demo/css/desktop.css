@@ -1,0 +1,99 @@
+
+:root {
+    --SQUARE-SIZE:80px;
+}
+
+
+
+/**
+ * default.css style
+ */
+
+@media only screen and (max-height: 799px) {
+    .logo-container {
+        display: none;
+    }
+}
+
+.show-always {
+    display: flex !important;
+}
+
+.logo-container {
+    height: 100px;
+}
+
+.logo {
+    height: 80px;
+    width: 178px;
+    padding-right: 15px;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+}
+
+.bubbles {
+    left: 25px;
+    max-height: 100px;
+}
+
+.main {
+    min-height: 100%;
+}
+
+.main-button {
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin: 20px;
+    transition: 0.2s;
+}
+
+.main-button:hover {
+    background-size: 400px;
+    transition: 0.2s;
+}
+
+
+
+/**
+ * documentation.html style
+ */
+
+.text {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin: 0% 20% 0% 20%;
+    text-align: justify;
+}
+
+
+
+/**
+ * play.php style
+ */
+
+.game-result-text {
+    font-size: 1.5rem;
+}
+
+.popup {
+    height: calc(var(--SQUARE-SIZE) * 5);
+    width: calc(var(--SQUARE-SIZE) * 5);
+}
+
+.engine-level {
+    font-size: 1.3rem;
+}
+
+
+
+/**
+ * analyze.php style
+ */
+
+.analysis-screen-mobile {
+    display: none;
+}
