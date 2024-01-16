@@ -124,15 +124,15 @@ a:visited {
     background-color: white !important;
 }
 
-.italian-flag {
-    background: url(media/italian-flag.png);
-    background-size: 24px;
-    width: 24px;
-    height: 24px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.italian-flag::after {
+    content: "";
+    background: url(media/italian-flag.png) 50% 50% no-repeat;
+    background-size: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-left: 3px;
+    margin-bottom: -1px;
 }
 
 .laureandosi {
