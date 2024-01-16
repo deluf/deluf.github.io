@@ -149,6 +149,11 @@ a:visited {
     background-size: 150px;
 }
 
+.innovatec {
+    background: url(projects/innovatec/preview.png) 30% 50% no-repeat;
+    background-size: 250px;
+}
+
 .project-body {
     display: flex;
     justify-content: space-between;
