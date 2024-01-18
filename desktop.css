@@ -87,7 +87,8 @@ a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 50px;
     background-color: black;
     width: 100%;
@@ -96,6 +97,12 @@ a:visited {
 
 .footer a, .footer a:visited {
     color: antiquewhite;
+}
+
+.flagcounter {
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
