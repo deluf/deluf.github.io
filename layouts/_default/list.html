@@ -70,6 +70,11 @@
     <header class="entry-header">
       <h2 class="entry-hint-parent">
         {{- .Title }}
+        
+        {{- if .Weight }}
+          <img src="pin.png" alt="Pin icon" width="24" height="24">
+        {{- end }}
+
         {{- if .Draft }}
         <span class="entry-hint" title="Draft">
           <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
@@ -93,6 +98,10 @@
     <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
   </div>
 </article>
+{{- if not (sub .Weight 3) }}
+  <br><br>
+{{- end }}
+
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}

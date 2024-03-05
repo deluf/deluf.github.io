@@ -10,11 +10,6 @@ cover:
   alt: Preview of Innovatec S.P.A
   image: 2024/innovatec/preview.png
 
-editPost:
-  Text: Suggest Changes
-  URL: https://github.com/deluf/deluf.github.io/content
-  appendFilePath: true
-
 tags:
 - Excel
 - Powerpoint

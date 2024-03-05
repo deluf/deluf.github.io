@@ -10,11 +10,6 @@ cover:
   image: 2024/chesspuzzles/preview.png
   relative: false
 
-editPost:
-  Text: Suggest Changes
-  URL: https://github.com/deluf/deluf.github.io/content
-  appendFilePath: true
-
 tags:
 - Java
 - Spring

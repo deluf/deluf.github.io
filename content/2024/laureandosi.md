@@ -9,11 +9,6 @@ cover:
   alt: Preview of Laureandosi
   image: 2024/laureandosi/preview.png
 
-editPost:
-  Text: Suggest Changes
-  URL: https://github.com/deluf/deluf.github.io/content
-  appendFilePath: true
-
 tags:
 - Wordpress
 - Php

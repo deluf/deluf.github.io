@@ -9,16 +9,13 @@ cover:
   alt: Preview of Codfish 2000
   image: 2023/codfish-2000/preview.png
 
-editPost:
-  Text: Suggest Changes
-  URL: https://github.com/deluf/deluf.github.io/content
-  appendFilePath: true
-
 tags:
 - Html
 - Css
 - Javascript
 - Php
+
+weight: 2
 ---
 
 ---

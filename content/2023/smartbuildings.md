@@ -9,13 +9,10 @@ cover:
   alt: Preview of SmartBuildings
   image: 2023/smartbuildings/preview.png
 
-editPost:
-  Text: Suggest Changes
-  URL: https://github.com/deluf/deluf.github.io/content
-  appendFilePath: true
-
 tags:
 - Mysql
+
+weight: 3
 ---
 
 ---

@@ -9,11 +9,6 @@ cover:
   alt: Preview of Radioactive decay
   image: 2021/radioactive-decay/preview.png
 
-editPost:
-  Text: Suggest Changes
-  URL: https://github.com/deluf/deluf.github.io/content
-  appendFilePath: true
-
 tags:
 - Html
 - Css
