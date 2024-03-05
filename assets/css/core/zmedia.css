@@ -40,7 +40,7 @@
 
     .entry-content {
         -webkit-line-clamp: 2;
-        text-align: justify;
+        text-align: left;
     }
 
     .entry-cover {
@@ -54,9 +54,16 @@
     }
 
     .post-tags-list {
-        gap: 2px;
-        margin-left: 2px;
-        overflow: scroll;
+        display: none;
+    }
+
+    @media screen and (min-width: 500px) {
+        .post-tags-list {
+            display: flex;
+            gap: 5px;
+            margin-left: 10px;
+            overflow:hidden
+        }
     }
 
 }
