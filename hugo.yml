@@ -1,0 +1,54 @@
+baseURL: https://deluf.github.io/
+languageCode: en-us
+title: Portfolio
+theme: PaperMod
+enableEmoji: true
+summaryLength: 1000
+timeZone: Europe/Rome
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+
+params:
+  math: true
+
+  homeInfoParams:
+    Title: Francesco De Lucchini
+    Content: Computer engineering student at University of Pisa, Italy 🇮🇹
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/deluf"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/francesco-de-lucchini"
+    - name: "chess"
+      url: "https://www.chess.com/member/deluf"
+
+  mainSections: ["2021", "2022", "2023", "2024"]
+
+  env: production
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInSingle: true

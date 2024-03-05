@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Portfolio</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Innovatec S.P.A.</title>
+      <link>http://localhost:1313/2024/innovatec/</link>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/2024/innovatec/</guid>
+      <description>Economics **and** **business organization** project concerning the analysis of a company&amp;#39;s history, governance, business model and budget</description>
+    </item>
+    <item>
+      <title>Laureandosi</title>
+      <link>http://localhost:1313/2024/laureandosi/</link>
+      <pubDate>Tue, 09 Jan 2024 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/2024/laureandosi/</guid>
+      <description>**WordPress** website which retrieves University Of Pisa graduands&amp;#39; grades and wraps them up in a PDF file along with some statistics and a final grade simulation</description>
+    </item>
+    <item>
+      <title>Chesspuzzles</title>
+      <link>http://localhost:1313/2024/chesspuzzles/</link>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/2024/chesspuzzles/</guid>
+      <description>**Java 11** **Spring** application which wraps [chess.com&amp;#39;s puzzle api](https://www.chess.com/news/view/published-data-api) for a **JavaFX** client</description>
+    </item>
+    <item>
+      <title>Codfish 2000</title>
+      <link>http://localhost:1313/2023/codfish-2000/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/2023/codfish-2000/</guid>
+      <description>**Javascript** chess engine written from scratch, with a nice ui and a simple **PHP**-**MySQL** back-end</description>
+    </item>
+    <item>
+      <title>SmartBuildings</title>
+      <link>http://localhost:1313/2023/smartbuildings/</link>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/2023/smartbuildings/</guid>
+      <description>**MySQL** database which stores buildings equipped with sensors and provides data analytics functions such as damage estimates following earthquakes</description>
+    </item>
+    <item>
+      <title>Radioactive Decay</title>
+      <link>http://localhost:1313/2021/radioactive-decay/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/2021/radioactive-decay/</guid>
+      <description>**High school graduation assignment** concerning **physics**, **maths** (differential equation of radioactive decay) and **sciences** (Carbon-14 dating &amp;amp; the Chernobyl accident)</description>
+    </item>
+  </channel>
+</rss>

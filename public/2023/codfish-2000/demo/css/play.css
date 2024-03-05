@@ -1,0 +1,48 @@
+
+.popup-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.popup {
+    background-color: #636569;
+    border: 5px solid black;
+    z-index: 3;
+}
+
+.game-result, .download-opening-book {
+    display: none;
+}
+
+.game-result {
+    background-color: rgba(99, 101, 105, 0.5);
+}
+
+.game-result-text {
+    margin-bottom: 10%;
+}
+
+.engine-level, .game-result-text, .download-opening-book-text {
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.slider {
+    margin-top: 5%;
+    width: 50%;
+}
+
+.opening-book {
+    margin-top: 5%;
+}
+
+.maximum-depth {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.save-position-button {
+    margin-left: 5%;
+}

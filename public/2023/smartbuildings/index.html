@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>SmartBuildings | Portfolio</title>
+<meta name="keywords" content="Mysql">
+<meta name="description" content="**MySQL** database which stores buildings equipped with sensors and provides data analytics functions such as damage estimates following earthquakes">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/2023/smartbuildings/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1cf055ebad638536de3188cf10b0b416d7b14822694be55cfe5cc643167e3e71.css" integrity="sha256-HPBV661jhTbeMYjPELC0FtexSCJpS&#43;Vc/lzGQxZ&#43;PnE=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2023/smartbuildings/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="SmartBuildings" />
+<meta property="og:description" content="**MySQL** database which stores buildings equipped with sensors and provides data analytics functions such as damage estimates following earthquakes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/2023/smartbuildings/" />
+<meta property="og:image" content="http://localhost:1313/2023/smartbuildings/preview.png" /><meta property="article:section" content="2023" />
+<meta property="article:published_time" content="2023-04-21T00:00:00+01:00" />
+<meta property="article:modified_time" content="2023-04-21T00:00:00+01:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/2023/smartbuildings/preview.png" />
+<meta name="twitter:title" content="SmartBuildings"/>
+<meta name="twitter:description" content="**MySQL** database which stores buildings equipped with sensors and provides data analytics functions such as damage estimates following earthquakes"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "2023s",
+      "item": "http://localhost:1313/2023/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "SmartBuildings",
+      "item": "http://localhost:1313/2023/smartbuildings/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "SmartBuildings",
+  "name": "SmartBuildings",
+  "description": "**MySQL** database which stores buildings equipped with sensors and provides data analytics functions such as damage estimates following earthquakes",
+  "keywords": [
+    "Mysql"
+  ],
+  "articleBody": " Resources\nCheck out the code on github (🇮🇹) Full project documentation is available here (🇮🇹) Restructured ER diagram is available is available here (🇮🇹) ER diagram is available is available here (🇮🇹) About SmartBuildings is the database of a company wihch deals with construction and renovation of buildings with the purpose of improving their security\nThe database stores the internal structure of buildings, the jobs carried out on them and their cost, the staff and the work shifts, the materials used and the warehouse, the sensors installed in the buildings and their measurements and finally the possible calamitous events and the their effect on surrounding buildings\nHighlights Calculate the area of any given building\nThe walls of the buildings are stored as segments in the Euclidean plane {(X1, Y1), (X2, Y2)}, this means that using the shoelace formula we can calculate the area of any given building, and in the database there is a function which does just that:\nIn order for this to work we must:\nOnly consider the polygon formed by the external walls of the building Order the vertices of that polygon in either a clockwise or counterclockwise order The first one is trivial; to achieve the second one, we can simply start from a random vertex of the polygon and then query the walls’ table to get (one of) the two adjacent vertices. If we keep track of which vertices we have already visited, we will end up with either a clockwise or a counterclockwise ordering, depending on the random choice made at the first vertex (the only one in which we could have gone to either adjacent vertex since neither of them was already visited)\nCreate an SVG plan of any building floor\nThe database contains a function which outputs a string representing the SVG plan of any given building floor: Blue segments are windows Green segments are doors Brown segments are generic openings Red dots are sensors Approximate earthquakes magnitude using accelerometers data\nThe database contains a stored procedure which approximates the magnitude of an earthquake using data collected form accelerometers in nearby buildings\nTo calculate the perceived magnitude of the earthquake by a given building we can use the following table:\nWe can then use the perceived magnitude \\(Mercalli(r)\\) of a building distant \\(r\\) km from the epicenter to approximate the intensity of the earthquake in its epicenter \\(Mercalli_0\\) using the following formula:\n\\[ Mercalli(r) = \\frac{Mercalli_0}{\\left(\\frac{r}{\\mu} + 1\\right)^2} \\] \\(\\mu\\) is the attenuation coefficient of the mechanical waves coming from the earthquake, by default 600 \\(+ 1\\) stops the function from going to \\(+\\infty\\) for \\(r\\to0\\) The exponent 2 at the denominator accounts for the fact that the energy carried in mechanical waves attenuates quadratically with the distance from the epicenter ",
+  "wordCount" : "459",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/2023/smartbuildings/preview.png","datePublished": "2023-04-21T00:00:00+01:00",
+  "dateModified": "2023-04-21T00:00:00+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/2023/smartbuildings/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Portfolio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+    
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+    
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a style="margin-right: 12px;"  href="http://localhost:1313/" accesskey="h" title="Portfolio (Alt + H)">Portfolio</a>
+            -
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/2023/">2023s</a></div>
+    <h1 class="post-title entry-hint-parent">
+      SmartBuildings
+    </h1>
+    <div class="post-description">
+      <strong>MySQL</strong> database which stores buildings equipped with sensors and provides data analytics functions such as damage estimates following earthquakes
+    </div>
+    <div class="post-meta">
+<ul class="post-tags">
+    <li><a href="http://localhost:1313/tags/mysql/" class="Mysql"></a></li>
+</ul><span title='2023-04-21 00:00:00 +0100 +0100'>April 21, 2023</span>&nbsp;·&nbsp;3 min&nbsp;|&nbsp;<a href="https://github.com/deluf/deluf.github.io/content/2023/smartbuildings.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> 
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/mysql/" class="Mysql"></a></li>
+    </ul>
+  </footer>
+  <div class="post-content"><hr>
+<blockquote>
+<p><strong>Resources</strong></p>
+</blockquote>
+<ul>
+<li>Check out the code on <a href="https://github.com/deluf/smartbuildings">github</a> (&#x1f1ee;&#x1f1f9;)</li>
+<li>Full project documentation is available <a href="/2023/smartbuildings/documentation.pdf">here</a> (&#x1f1ee;&#x1f1f9;)</li>
+<li>Restructured ER diagram is available is available <a href="/2023/smartbuildings/er-diagram.pdf">here</a> (&#x1f1ee;&#x1f1f9;)</li>
+<li>ER diagram is available is available <a href="/2023/smartbuildings/restructured-er-diagram.pdf">here</a> (&#x1f1ee;&#x1f1f9;)</li>
+</ul>
+<hr>
+<h2 id="about">About<a hidden class="anchor" aria-hidden="true" href="#about">#</a></h2>
+<p>SmartBuildings is the database of a company wihch deals with construction and renovation of buildings with the purpose of improving their security</p>
+<p>The database stores the internal structure of buildings, the jobs carried out on them and their cost, the staff and the work shifts, the materials used and the warehouse, the sensors installed in the buildings and their measurements and finally the possible calamitous events and the their effect on surrounding buildings</p>
+
+
+    <br>
+
+<h2 id="highlights">Highlights<a hidden class="anchor" aria-hidden="true" href="#highlights">#</a></h2>
+<blockquote>
+<p><strong>Calculate the area of any given building</strong></p>
+</blockquote>
+<p>The walls of the buildings are stored as segments in the Euclidean plane {(X<sub>1</sub>, Y<sub>1</sub>), (X<sub>2</sub>, Y<sub>2</sub>)}, this means that using the <a href="https://en.wikipedia.org/wiki/Shoelace_formula">shoelace formula</a> we can calculate the area of any given building, and in the database there is a function which does just that:</p>
+<p><img loading="lazy" src="/2023/smartbuildings/shoelace.gif" alt="Shoelace formula animation"  />
+</p>
+<p>In order for this to work we must:</p>
+<ol>
+<li>Only consider the polygon formed by the external walls of the building</li>
+<li><strong>Order the vertices of that polygon in either a clockwise or counterclockwise order</strong></li>
+</ol>
+<p>The first one is trivial; to achieve the second one, we can simply start from a random vertex of the polygon and then query the walls&rsquo; table to get (one of) the two adjacent vertices. If we keep track of which vertices we have already visited, we will end up with either a clockwise or a counterclockwise ordering, depending on the random choice made at the first vertex (the only one in which we could have gone to either adjacent vertex since neither of them was already visited)</p>
+
+
+    <br>
+
+<blockquote>
+<p><strong>Create an SVG plan of any building floor</strong></p>
+</blockquote>
+<div style="display: grid; grid-template-columns: auto auto; column-gap: 20px;">
+    
+    <div>
+    
+        The database contains a function which outputs a string representing the SVG plan of any given building floor:
+        <ul>
+            <li><span style="color: #4aa1ff;">Blue</span> segments are windows</li>
+            <li><span style="color: #3cc961;">Green</span> segments are doors</li>
+            <li><span style="color: #aa6c49;">Brown</span> segments are generic openings</li>
+            <li><span style="color: #c33232;">Red</span> dots are sensors</li>
+        </ul>
+    
+</div>
+    <div>
+    
+        <img width="300" style="margin: 0" src="/2023/smartbuildings/floor.png" alt="Floor plan">
+    
+</div>
+
+</div>
+
+
+    <br>
+
+<blockquote>
+<p><strong>Approximate earthquakes magnitude using accelerometers data</strong></p>
+</blockquote>
+<p>The database contains a stored procedure which approximates the magnitude of an earthquake using data collected form accelerometers in nearby buildings</p>
+<p>To <strong>calculate the perceived magnitude of the earthquake by a given building</strong> we can use the following table:</p>
+<p><img loading="lazy" src="/2023/smartbuildings/pga-table.png" alt="PGA to Mercalli table"  />
+</p>
+<p>We can then use the perceived magnitude \(Mercalli(r)\) of a building distant \(r\) km from the epicenter to approximate the intensity of the earthquake in its epicenter \(Mercalli_0\) using the following formula:</p>
+\[ Mercalli(r) = \frac{Mercalli_0}{\left(\frac{r}{\mu} + 1\right)^2} \]
+<ul>
+<li>\(\mu\) is the attenuation coefficient of the mechanical waves coming from the earthquake, by default 600</li>
+<li>\(+ 1\) stops the function from going to \(+\infty\) for \(r\to0\)</li>
+<li>The exponent 2 at the denominator accounts for the fact that the energy carried in mechanical waves attenuates quadratically with the distance from the epicenter</li>
+</ul>
+
+
+  </div>
+</article>
+    </main>
+    
+<footer class="footer" style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;"
+>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        - Icons courtesy of 
+        <a href="https://www.flaticon.com">Flaticon</a>
+    </span>
+    <a style="border-bottom: 0; margin-top: 10px;" href="http://s11.flagcounter.com/more/P47a"><img src="https://s11.flagcounter.com/count2/P47a/bg_2E2E2E/txt_FFFFFF/border_000000/columns_5/maxflags_10/viewers_3/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter"></a>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
