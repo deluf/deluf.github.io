@@ -21,8 +21,8 @@ weight: 1
 
 > **Resources**
 
-- Soruce code for the telegram bot running on the ESP32 is available [here](/2024/woodenbox/esp32-telegram-bot.ino) (Arduino/C++)
-- Soruce code for the telegram bot running on the server is available [here](/2024/woodenbox/woodenbox-telegram-bot.py) (Python)
+- Soruce code for the telegram bot running on the ESP32 is available [here](esp32-telegram-bot/) (Arduino/C++)
+- Soruce code for the telegram bot running on the server is available [here](woodenbox-telegram-bot/) (Python)
 
 ---
 
@@ -118,9 +118,3 @@ Here i could have either opened up a port for each service or a single port for 
   {{< figure src="/2024/woodenbox/power.jpg" >}}
 
 {{< /twocolumns >}}
-
-
-
-
-
-
