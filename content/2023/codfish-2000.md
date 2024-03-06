@@ -46,12 +46,16 @@ Registered users can save the result of each analysis to a database and can also
 
 ## See it in action
 
+> **Play against the CPU**
+
 {{< video "/2023/codfish-2000/play.mp4" >}}
 
-{{< space 2 >}}
+{{< space 25 >}}
+
+> **Analyze position**
 
 {{< video "/2023/codfish-2000/analyze.mp4" >}}
 
-{{< space 2 >}}
+{{< space 50 >}}
 
 > Note: *Security was NOT a priority in this project (at least passwords are hashed)*

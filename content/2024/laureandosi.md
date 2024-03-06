@@ -29,7 +29,7 @@ The **teaching unit** selects a major, a date for the graduation session and wri
 
 {{< video "/2024/laureandosi/user.mp4" >}}
 
-{{< space 2 >}}
+{{< space 25 >}}
 
 The **administrator** can run two types of test: a fast one and a complete one (which shows all the calculated values near the expected ones and includes a visual inspection for the generated pdf files)
 

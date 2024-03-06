@@ -32,8 +32,6 @@ SmartBuildings is the database of a company wihch deals with construction and re
 
 The database stores the internal structure of buildings, the jobs carried out on them and their cost, the staff and the work shifts, the materials used and the warehouse, the sensors installed in the buildings and their measurements and finally the possible calamitous events and the their effect on surrounding buildings
 
-{{< space 1 >}}
-
 ## Highlights
 
 > **Calculate the area of any given building**
@@ -48,7 +46,7 @@ In order for this to work we must:
 
 The first one is trivial; to achieve the second one, we can simply start from a random vertex of the polygon and then query the walls' table to get (one of) the two adjacent vertices. If we keep track of which vertices we have already visited, we will end up with either a clockwise or a counterclockwise ordering, depending on the random choice made at the first vertex (the only one in which we could have gone to either adjacent vertex since neither of them was already visited)
 
-{{< space 1 >}}
+{{< space 50 >}}
 
 > **Create an SVG plan of any building floor**
 
@@ -67,7 +65,7 @@ The first one is trivial; to achieve the second one, we can simply start from a 
     {{< /column >}}
 {{< /twocolumns >}}
 
-{{< space 1 >}}
+{{< space 50 >}}
 
 > **Approximate earthquakes magnitude using accelerometers data**
 

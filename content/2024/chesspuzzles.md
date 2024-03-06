@@ -66,6 +66,6 @@ The endpoints exposed by the spring application are:
     POST /users/{userId}/attemps/add
 ```
 
-{{< space 1 >}}
+{{< space 50 >}}
 
 > Note: *Security was NOT a priority in this project (at least passwords are hashed)*

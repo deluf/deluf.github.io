@@ -466,3 +466,9 @@ img.in-text {
 .post-tags-list li  .Spring { background-image: url("/tags/spring.png"); }
 .post-footer li     .Wordpress,
 .post-tags-list li  .Wordpress { background-image: url("/tags/wordpress.png"); }
+.post-footer li     .Arduino,
+.post-tags-list li  .Arduino { background-image: url("/tags/arduino.png"); }
+.post-footer li     .Python,
+.post-tags-list li  .Python { background-image: url("/tags/python.png"); }
+.post-footer li     .Linux,
+.post-tags-list li  .Linux { background-image: url("/tags/linux.png"); }
