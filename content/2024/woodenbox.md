@@ -21,8 +21,8 @@ weight: 1
 
 > **Resources**
 
-- Excel budget analysis sheet is available [here](/2024/innovatec/analysis.xlsx) (:it:)
-- PDF version of the presentation is available [here](/2024/innovatec/presentation.pdf) (:it:)
+- Soruce code for the telegram bot running on the ESP32 is available [here](/2024/woodenbox/esp32-telegram-bot.ino) (Arduino/C++)
+- Soruce code for the telegram bot running on the server is available [here](/2024/woodenbox/woodenbox-telegram-bot.py) (Python)
 
 ---
 
