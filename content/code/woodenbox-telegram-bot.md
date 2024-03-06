@@ -1,6 +1,9 @@
 ---
-draft: true
+title: Woodenbox
 description: "Source code for the telegram bot running on woodenbox"
+draft: false
+ShowBreadCrumbs: false
+ShowReadingTime: false
 ---
 
 ---
