@@ -21,8 +21,8 @@ weight: 1
 
 > **Resources**
 
-- Soruce code for the telegram bot running on the ESP32 is available [here](/code/esp32-telegram-bot/) (Arduino/C++)
-- Soruce code for the telegram bot running on the server is available [here](/code/woodenbox-telegram-bot/) (Python)
+- Source code for the telegram bot running on the ESP32 is available [here](/code/esp32-telegram-bot/) (Arduino/C++)
+- Source code for the telegram bot running on the server is available [here](/code/woodenbox-telegram-bot/) (Python)
 
 ---
 
