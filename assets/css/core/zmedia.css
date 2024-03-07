@@ -66,6 +66,10 @@
         }
     }
 
+    .mobile {
+        display: block !important;
+    }
+
 }
 
 /* footer */

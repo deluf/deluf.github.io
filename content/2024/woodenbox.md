@@ -109,7 +109,7 @@ Here i could have either opened up a port for each service or a single port for 
 
 > **Power consumption**
 
-{{< twocolumns 40 >}}
+{{< twocolumns 40 mobile >}}
 
   {{< column >}}
     The power consumption of the ESP32 is negligible and the server only uses about 20W on full load, 8W idle, and 2W while suspended <i>(i have to suspend it instead of completely turning it off otherwise the WakeOnLan procedure doesn't always work)</i>. This results in an average cost (@ 0.15 €/kWh) of <b>0.1 € per week</b>. That's really low!

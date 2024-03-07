@@ -3,7 +3,7 @@ title: Laureandosi
 date: "2024-01-09T00:00:00+01:00"
 draft: false
 
-description: "**WordPress** website which retrieves University Of Pisa graduands' grades and wraps them up in a PDF file along with some statistics and a final grade simulation"
+description: "**WordPress** website which retrieves University Of Pisa graduands' grades and wraps them up in a PDF file along with some statistics and a simulation of the final grade"
 
 cover:
   alt: Preview of Laureandosi

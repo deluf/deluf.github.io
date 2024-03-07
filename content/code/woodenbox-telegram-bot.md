@@ -1,6 +1,6 @@
 ---
 title: Woodenbox
-description: "Source code for the telegram bot running on woodenbox"
+description: "Source code for the telegram bot running on the server"
 draft: false
 ShowBreadCrumbs: false
 ShowReadingTime: false

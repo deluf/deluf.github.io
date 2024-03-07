@@ -50,7 +50,7 @@ The first one is trivial; to achieve the second one, we can simply start from a 
 
 > **Create an SVG plan of any building floor**
 
-{{< twocolumns 20 >}}
+{{< twocolumns 20 mobile >}}
     {{< column >}}
         The database contains a function which outputs a string representing the SVG plan of any given building floor:
         <ul>
