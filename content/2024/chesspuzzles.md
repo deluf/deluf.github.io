@@ -19,7 +19,7 @@ tags:
 
 > **Resources**
 
-- Check out the code on [github](https://github.com/deluf/chesspuzzles)
+- [Code](https://github.com/deluf/chesspuzzles)
 
 ---
 
@@ -65,7 +65,3 @@ The endpoints exposed by the spring application are:
     GET  /users/{userId}/attemps/afer?timestamp=...
     POST /users/{userId}/attemps/add
 ```
-
-{{< space 50 >}}
-
-> Note: *Security was NOT a priority in this project (at least passwords are hashed)*

@@ -19,10 +19,10 @@ tags:
 
 > **Resources**
 
-- Full assignment is available [here](/2021/radioactive-decay/assignment.pdf) (:it:)
+- [Assignment](/2021/radioactive-decay/assignment.pdf) (:it:)
 
 ---
 
 ## About
 
-Not really much to say here, instead of presenting the assignment using a powerpoint i created a simple HTML/CSS/JS website, available [here](/2021/radioactive-decay/demo) (:it:)
+Not really much to say here, the only thing worth mentioning is that instead of presenting the assignment using a powerpoint, i created a simple HTML/CSS/JS website, available [here](/2021/radioactive-decay/demo) (:it:)

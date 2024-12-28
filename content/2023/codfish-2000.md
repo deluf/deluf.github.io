@@ -22,7 +22,7 @@ weight: 2
 
 > **Resources**
 
-- Check out the code on [github](https://github.com/deluf/codfish-2000)
+- [Code](https://github.com/deluf/codfish-2000)
 - [Play against the engine!](/2023/codfish-2000/demo/)
 
 ---
@@ -37,7 +37,7 @@ For the first few moves, the engine will randomly choose one of the three most p
         
 All the [rules of chess](https://en.wikipedia.org/wiki/Rules_of_chess) are implemented except for the repetition rule (if the same board appears three times, then the game ends in a draw)
 
-The [algebraic notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)) used (the standard method for describing moves) is also slightly simplified and does not consider checks (+) and checkmates (#)
+The [algebraic notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)) used (the standard method for describing moves) is also slightly simplified and does not show checks (+) and checkmates (#)
         
 The website offers the possibility to use Codfish 2000 to analyze any chess position, specified via the standard [FEN](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) notation, and also offers the possibility to watch the engine play against itself
     
@@ -57,5 +57,3 @@ Registered users can save the result of each analysis to a database and can also
 {{< video "/2023/codfish-2000/analyze.mp4" >}}
 
 {{< space 50 >}}
-
-> Note: *Security was NOT a priority in this project (at least passwords are hashed)*

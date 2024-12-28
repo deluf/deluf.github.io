@@ -33,7 +33,7 @@ params:
 
   homeInfoParams:
     Title: Francesco De Lucchini
-    Content: Computer engineering student at University of Pisa, Italy 🇮🇹
+    Content: Computer Engineering student at the University of Pisa, Italy 🇮🇹
 
   socialIcons:
     - name: "github"
