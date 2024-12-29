@@ -43,7 +43,7 @@ params:
     - name: "chess"
       url: "https://www.chess.com/member/deluf"
 
-  mainSections: ["2021", "2022", "2023", "2024"]
+  mainSections: ["2021", "2022", "2023", "2024", "2025"]
 
   env: production
   ShowReadingTime: true

@@ -10,7 +10,7 @@ cover:
   image: 2024/woodenbox/preview.jpeg
 
 tags:
-- Arduino
+- Embedded
 - Linux
 - Python
 
@@ -21,7 +21,7 @@ weight: 1
 
 > **Resources**
 
-- [ESP32's code](/code/esp32-telegram-bot/) (Arduino/C++)
+- [ESP32's code](/code/esp32-telegram-bot/) (C++)
 - [Server's code](/code/woodenbox-flask-api/) (Python)
 
 ---
