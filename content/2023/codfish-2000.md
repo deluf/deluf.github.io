@@ -3,7 +3,7 @@ title: Codfish 2000
 date: "2023-06-30T00:00:00+01:00"
 draft: false
 
-description: "**Javascript** chess engine written from scratch, with a nice ui and a simple **PHP**-**MySQL** back-end"
+description: "**Javascript** chess engine written from scratch, with a nice UI and a simple **PHP**-**MySQL** back-end"
 
 cover:
   alt: Preview of Codfish 2000

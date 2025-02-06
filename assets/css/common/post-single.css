@@ -476,3 +476,15 @@ img.in-text {
 .post-tags-list li  .Linux { background-image: url("/tags/linux.png"); }
 .post-footer li     .Typst,
 .post-tags-list li  .Typst { background-image: url("/tags/typst.png"); }
+.post-footer li     .OMNeTpp,
+.post-tags-list li  .OMNeTpp { background-image: url("/tags/omnetpp.png"); }
+.post-footer li     .Cpp,
+.post-tags-list li  .Cpp { background-image: url("/tags/cpp.png"); }
+.post-footer li     .Overleaf,
+.post-tags-list li  .Overleaf { background-image: url("/tags/overleaf.png"); }
+.post-footer li     .Modelsim,
+.post-tags-list li  .Modelsim { background-image: url("/tags/modelsim.png"); }
+.post-footer li     .VHDL,
+.post-tags-list li  .VHDL { background-image: url("/tags/vhdl.png"); }
+.post-footer li     .Vivado,
+.post-tags-list li  .Vivado { background-image: url("/tags/vivado.png"); }

@@ -49,7 +49,7 @@ Let's check that using **wireshark**:
 
 A question may come naturally: why do i need to split a message and its size?
 
-It is a very common newbie error to assume that every write() or send() on a TCP socket on the sending side will be matched by a read() or recv() from a TCP socket on the receiving side. This is not true. The sender might write() 200 bytes, and the first read() or recv() will return the first 50 bytes, only, and the next call returns the remaining 150 bytes. *(Source : [this](https://stackoverflow.com/questions/77208393/how-can-i-get-the-exact-size-of-incoming-packet-for-a-tcp-server-in-c) stackoweflow answer)*
+It is a very common newbie error to assume that every `write()` or `send()` on a TCP socket on the sending side will be matched by a `read()` or `recv()` from a TCP socket on the receiving side. This is not true. The sender might `write()` 200 bytes, and the first `read()` or `recv()` will return the first 50 bytes, only, and the next call returns the remaining 150 bytes. *(Source : [this](https://stackoverflow.com/questions/77208393/how-can-i-get-the-exact-size-of-incoming-packet-for-a-tcp-server-in-c) stackoweflow answer)*
 
 Therefore, you can either:
 1. Send messages of fixed size, so that the receiver knows exatcly how many bytes to wait for
