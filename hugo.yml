@@ -33,7 +33,7 @@ params:
 
   homeInfoParams:
     Title: Francesco De Lucchini
-    Content: Computer Engineering student at the University of Pisa, Italy 🇮🇹
+    Content: "Computer Engineering student at the University of Pisa, Italy 🇮🇹 \n\n Feel free to contact me at delucchinifrancesco[at]gmail[dot]com"
 
   socialIcons:
     - name: "github"
@@ -52,3 +52,5 @@ params:
   cover:
     hidden: false # hide everywhere but not in structured data
     hiddenInSingle: true
+
+  postsPerPage: 20

@@ -11,8 +11,6 @@ cover:
 
 tags:
 - Mysql
-
-weight: 3
 ---
 
 ---

@@ -3,7 +3,7 @@ title: Image processing
 date: "2025-02-05T00:00:00+01:00"
 draft: false
 
-description: "**VHDL digital circuit** implementing an image processing task on the **FPGA** module of a Zynq-7000 development board"
+description: "**VHDL digital circuit** implementing an image processing algorithm on the **FPGA** module of a Zynq-7000 development board"
 
 cover:
   alt: Preview of Image processing
@@ -14,6 +14,8 @@ tags:
 - Modelsim
 - Vivado
 - Python
+
+weight: 3
 ---
 
 ---

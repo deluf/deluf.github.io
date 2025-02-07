@@ -39,16 +39,16 @@ Users can also add puzzles to favourites and play them again later
 
 ## Server side
     
-The **MySQL database** stores users, attempts and favourite puzzles (via JSON serialization) and is automatically created and populated by the **Java Persistence Api** with the values present in the JSON files inside the `resources/init` folder
+A **MySQL database** stores users, attempts and favourite puzzles (via JSON serialization) and is automatically created and populated by the **Java Persistence Api** with the values present in the JSON files inside the `resources/init` folder
 
 The endpoints of [chess.com's puzzle api](https://www.chess.com/news/view/published-data-api) used by the spring application are:
 - `https://api.chess.com/pub/puzzle/random`
 - `https://www.chess.com/dynboard?fen=...&board=...&pieces=...`
 
-There is a **shared** *(kind of)* **package** between the client and the server called `shared` used 
+There is a **shared** *(kind of)* **java package** between the client and the server called `shared` used 
 for the json serialization and de-serialization of HTTP requests
 
-The endpoints exposed by the spring application are:
+The endpoints exposed by the spring application (and used by the client) are:
 
 ```
     GET  /puzzles/random
