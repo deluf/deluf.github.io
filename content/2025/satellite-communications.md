@@ -34,7 +34,7 @@ tags:
 
 {{< space 20 >}}
 
-In this (group) project we studied the effectiveness of a maximum-coding-rate scheduling algorithm for a satellite-based communication system, by means of the throughput, the mean packet delay, and the mean frame utilization.
+In this group project we studied the effectiveness of a maximum-coding-rate scheduling algorithm for a satellite-based communication system, by means of the throughput, the mean packet delay, and the mean frame utilization.
 
 The simulator was developed with the `OMNeT++` framework, and was thoughtfully validated using: detailed debugging statements, runtime error handling, memory leak analysis, code profiling, and both intuitive and mathematical proofs for a wide range of behavioral tests.
 

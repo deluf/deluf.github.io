@@ -488,3 +488,7 @@ img.in-text {
 .post-tags-list li  .VHDL { background-image: url("/tags/vhdl.png"); }
 .post-footer li     .Vivado,
 .post-tags-list li  .Vivado { background-image: url("/tags/vivado.png"); }
+.post-footer li     .Hadoop,
+.post-tags-list li  .Hadoop { background-image: url("/tags/hadoop.png"); }
+.post-footer li     .Spark,
+.post-tags-list li  .Spark { background-image: url("/tags/spark.png"); }
