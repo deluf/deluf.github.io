@@ -31,14 +31,16 @@ tags:
 
 {{< space 20 >}}
 
-In this group project we explored the performance and scalability of three approaches to building an inverted index — a critical data structure in search engines.
+In this group project, we explored the performance and scalability of three approaches to building an inverted index - a data structure that maps a word to the files in which it appears, widely used in database indexes and search engines.
 
 Our work compared:
-- A simple Python script for small-scale indexing
-- A Hadoop MapReduce implementation, finely tuned with combiner optimization and input format adjustments
-- A Spark-based solution leveraging off-the-shelf libraries for fast in-memory processing
+- A simple Python non-parallel script
+- A Hadoop-based solution
+- A Spark-based solution
 
-We evaluated all implementations on a distributed cluster (courtesy of the University of Pisa) using real-world datasets from [Project Gutenberg](https://www.gutenberg.org/) (UTF-8 books), ranging from 500 KB to 5 GB. Despite limited RAM, the Hadoop solution showed performance comparable to Spark when tuned properly, while Python excelled in simplicity and low memory usage for smaller data.
+We evaluated all implementations on a distributed cluster (courtesy of the University of Pisa) using real-world datasets from [Project Gutenberg](https://www.gutenberg.org/) (UTF-8 books), ranging from 500 KB to 5 GB. 
+
+Thanks to the limited RAM, the Hadoop solution showed performance comparable to Spark when tuned properly, while Python excelled in simplicity and low memory usage for smaller datasets.
 
 This project offered hands-on experience with big data tools and showcased the trade-offs between simplicity, scalability, and efficiency in cloud-native applications.
 
