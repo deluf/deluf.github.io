@@ -494,3 +494,5 @@ img.in-text {
 .post-tags-list li  .Spark { background-image: url("/tags/spark.png"); }
 .post-footer li     .CUDA,
 .post-tags-list li  .CUDA { background-image: url("/tags/cuda.png"); }
+.post-footer li     .OpenSSL,
+.post-tags-list li  .OpenSSL { background-image: url("/tags/openssl.png"); }
