@@ -11,8 +11,8 @@ cover:
 
 tags:
 - C
-- Linux
 - OpenSSL
+- Linux
 ---
 
 ---
@@ -24,7 +24,7 @@ tags:
 
 ---
 
-## About
+## Highlights
 
 > **Summary**
 
@@ -40,7 +40,7 @@ Finally, a sample conversation between a client and the server was captured and 
 
 {{< space 40 >}}
 
-> **A few images picked from the documentation**
+> **Pictures**
 
 {{< figure src="/2025/digital-signature-server/handshake.png" caption="Sequence diagram of the handshake (server authentication) protocol" >}}
 
@@ -57,3 +57,7 @@ Finally, a sample conversation between a client and the server was captured and 
 {{< figure src="/2025/digital-signature-server/response.png" caption="Interpretation of the server’s response above" >}}
 
 {{< space 50 >}}
+
+> **See it in action**
+
+{{< video "/2025/digital-signature-server/action.mp4" >}}

@@ -23,7 +23,7 @@ tags:
 
 ---
 
-## About
+## Highlights
 
 > **Summary**
 
@@ -39,7 +39,7 @@ Finally, we optimized the CUDA code by introducing a tile-based thread schedulin
 
 {{< space 40 >}}
 
-> **A few charts picked from the documentation**
+> **Pictures**
 
 {{< figure src="/2025/parallel-ray-tracing/preview.png" caption="An example of rendered scene" >}}
 

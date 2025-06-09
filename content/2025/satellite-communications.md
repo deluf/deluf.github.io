@@ -10,9 +10,8 @@ cover:
   image: 2025/satellite-communications/preview.gif
 
 tags:
-- OMNeTpp
 - Cpp
-- Python
+- OMNeTpp
 ---
 
 ---
@@ -24,7 +23,7 @@ tags:
 
 ---
 
-## About
+## Highlights
 
 > **Summary**
 
@@ -42,7 +41,7 @@ Finally, using the simulator we just built, we tested the system under light, no
 
 {{< space 40 >}}
 
-> **A few charts picked from the documentation**
+> **Pictures**
 
 {{< figure src="/2025/satellite-communications/calibration.png" caption="Calibration of the warmup period of the system under normal operating conditions" >}}
 

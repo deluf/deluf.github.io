@@ -28,6 +28,11 @@ menu:
       url: /
       weight: 10
 
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+
 params:
   math: true
 
@@ -46,7 +51,7 @@ params:
   mainSections: ["2021", "2022", "2023", "2024", "2025"]
 
   env: production
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowBreadCrumbs: true
 
   cover:

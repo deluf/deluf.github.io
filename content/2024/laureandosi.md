@@ -1,7 +1,7 @@
 ---
 title: Laureandosi
 date: "2024-01-09T00:00:00+01:00"
-draft: false
+draft: true
 
 description: "**WordPress** website which allows the school office to summarize the careers of students about to graduate in a PDF file"
 

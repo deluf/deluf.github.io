@@ -24,11 +24,9 @@ tags:
 
 ---
 
-## About
+## Highlights
 
 SmartBuildings is the database of a company wihch deals with the construction and renovation of buildings with the purpose of improving their structural health and overall safety
-
-## Highlights
 
 > **Calculate the area of any given building**
 

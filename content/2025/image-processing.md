@@ -27,7 +27,7 @@ weight: 3
 
 ---
 
-## About
+## Highlights
 
 > **Introduction**
 

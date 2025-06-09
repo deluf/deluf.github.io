@@ -25,7 +25,7 @@ tags:
 
 ---
 
-## About
+## Highlights
 
 > **Summary**
 
@@ -46,7 +46,7 @@ This project offered hands-on experience with big data tools and showcased the t
 
 {{< space 40 >}}
 
-> **A few charts picked from the documentation**
+> **Pictures**
 
 {{< figure src="/2025/inverted-index/combiners.png" caption="Execution times of different combiner designs for the Hadoop solution as the size of the dataset increases" >}}
 

@@ -12,6 +12,7 @@ cover:
 tags:
 - Embedded
 - Linux
+- Cpp
 - Python
 
 weight: 1

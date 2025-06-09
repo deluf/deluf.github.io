@@ -1,7 +1,7 @@
 ---
 title: Escape room
 date: "2024-09-10T00:00:00+01:00"
-draft: false
+draft: true
 
 description: "**Plain C89** client-server escape-room-inspired **CLI game**"
 

@@ -1,7 +1,7 @@
 ---
 title: Bachelor's thesis
 date: "2024-10-10T00:00:00+01:00"
-draft: false
+draft: true
 
 description: "For my Bachelor's degree in Computer Engineering i defended the following thesis: \"**Multimodal stochastic optimization**: state of the art\""
 

@@ -1,7 +1,7 @@
 ---
 title: ChessPuzzles
 date: "2024-01-08T00:00:00+01:00"
-draft: false
+draft: true
 
 description: "**Java 11** **Spring** application which wraps [chess.com's puzzle api](https://www.chess.com/news/view/published-data-api) for a **JavaFX** client"
 
