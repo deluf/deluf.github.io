@@ -492,3 +492,5 @@ img.in-text {
 .post-tags-list li  .Hadoop { background-image: url("/tags/hadoop.png"); }
 .post-footer li     .Spark,
 .post-tags-list li  .Spark { background-image: url("/tags/spark.png"); }
+.post-footer li     .CUDA,
+.post-tags-list li  .CUDA { background-image: url("/tags/cuda.png"); }
