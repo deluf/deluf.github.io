@@ -31,7 +31,7 @@ tags:
 
 {{< space 20 >}}
 
-In this group project, we explored the performance and scalability of three approaches to building an inverted index - a data structure that maps a word to the files in which it appears, widely used in database indexes and search engines.
+In this group project, we explored the performance and scalability of three approaches to building an inverted index, a data structure that maps a word to the files in which it appears, widely used in database indexes and search engines.
 
 Our work compared:
 - A simple Python non-parallel script
