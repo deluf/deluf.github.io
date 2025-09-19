@@ -3,7 +3,7 @@ title: Digital signature server
 date: "2025-06-30T00:00:00+01:00"
 draft: false
 
-description: "**C11** secure **digital signature server** implemented using the **OpenSSL** and **libsodium** crypto libraries"
+description: "**C11 digital signature server** implemented using the **OpenSSL** and **libsodium** crypto libraries"
 
 cover:
   alt: Preview of Digital signature server
@@ -30,13 +30,13 @@ tags:
 
 {{< space 20 >}}
 
-This project involved the design and implementation of a secure digital signature server, a trusted third party that creates private-public key pairs, stores them and generates digital signatures on the behalf of the users - a common requirement in organizational settings where centralized key management is crucial.
+This project involved the design and implementation of a digital signature server, a trusted third party that creates private-public key pairs, stores them and generates digital signatures on the behalf of the users (a common requirement in organizational settings where centralized key management is preferred).
 
-The core of the project was to build a robust authentication protocol and secure communication channel without relying on existing high-level libraries like TLS:
-* **Handshake:** A secure channel is established using Elliptic-Curve Diffie-Hellman Ephemeral key exchange (X25519 curve) to ensure Perfect Forward Secrecy. The channel also provides confidentiality, integrity and no-replay through authenticated encryption (AES-128-GCM)
-* **Authentication:** The server authenticates to the client using a digital signature (ECDSA). Clients authenticate to the server using a username and a securely hashed password (Argon2id)
+The core of the project was to build a robust authentication protocol and a secure communication channel without relying on existing high-level libraries like TLS:
+* **Handshake:** A secure channel is established using Elliptic-Curve Diffie-Hellman Ephemeral key exchange (`X25519` curve) to ensure Perfect Forward Secrecy. The channel also provides confidentiality, integrity and no-replay through authenticated encryption (`AES-128-GCM`)
+* **Authentication:** The server authenticates to the client using a digital signature (`ECDSA`). Clients authenticate to the server using a username and a securely hashed password (`Argon2id`)
 
-Finally, a sample conversation between a client and the server was captured and analyzed using **Wireshark**, verifying that each exchanged byte conformed to the designed protocol and confirming that an eavesdropper could observe only the ciphertext.
+Finally, a sample conversation between a client and the server was captured and analyzed using **Wireshark**, verifying that each exchanged byte conformed to the designed protocol and confirming that an eavesdropper could only observe the ciphertext.
 
 {{< space 40 >}}
 

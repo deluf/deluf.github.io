@@ -3,7 +3,7 @@ title: SmartBuildings
 date: "2023-04-21T00:00:00+01:00"
 draft: false
 
-description: "**MySQL** database which handles buildings equipped with sensors and provides data analytics functions such as damage estimation following earthquakes"
+description: "**MySQL database** which handles buildings equipped with sensors and provides data analytics functions such as damage estimation following earthquakes"
 
 cover:
   alt: Preview of SmartBuildings
@@ -19,26 +19,26 @@ tags:
 
 - [Code](https://github.com/deluf/smartbuildings) (:it:)
 - [Documentation](/2023/smartbuildings/documentation.pdf) (:it:)
-- [Restructured ER diagram](/2023/smartbuildings/er-diagram.pdf) (:it:)
 - [ER diagram](/2023/smartbuildings/restructured-er-diagram.pdf) (:it:)
+- [Restructured ER diagram](/2023/smartbuildings/er-diagram.pdf) (:it:)
 
 ---
 
 ## Highlights
 
-SmartBuildings is the database of a company wihch deals with the construction and renovation of buildings with the purpose of improving their structural health and overall safety
+SmartBuildings is the database of an imaginary company that deals with the construction and renovation of buildings with the purpose of improving their structural health and overall safety.
 
 > **Calculate the area of any given building**
 
-Walls are stored as segments in the Euclidean plane {(X{{< subscript 1>}}, Y{{< subscript 1>}}), (X{{< subscript 2>}}, Y{{< subscript 2>}})}, this means that using the [shoelace formula](https://en.wikipedia.org/wiki/Shoelace_formula) it is possible to calculate the area of any given building, and in the database there is a function which does just that
+Walls are stored as segments in the Euclidean plane {(X{{< subscript 1>}}, Y{{< subscript 1>}}), (X{{< subscript 2>}}, Y{{< subscript 2>}})}, this means that using the [shoelace formula](https://en.wikipedia.org/wiki/Shoelace_formula) it is possible to calculate the area of any given building, and in the database there is a stored procedure which does just that.
 
 ![Shoelace formula animation](/2023/smartbuildings/shoelace.gif)
 
 In order to apply the shoelace formula we must: 
-1. Only consider the polygon formed by the external walls of the building (trivial: an external wall is a wall that delimits one and only one room)
+1. Only consider the polygon formed by the external walls of the building (an external wall is a wall that delimits one and only one room)
 2. **Order the vertices of that polygon in either a clockwise or counterclockwise order**
 
-To achieve the second point, one can simply start from a random vertex of the polygon and then query the table containing the walls to get (one of) the two adjacent vertices. By keeping track of which vertices have already been visited, one will end up with either a clockwise or a counterclockwise ordering, depending on the random choice made at the first vertex
+To achieve the second point, one can simply start from a random vertex of the polygon and then query the table containing the walls to get (one of) the two adjacent vertices. By keeping track of which vertices have already been visited, one will end up with either a clockwise or a counterclockwise ordering, depending on the random choice made at the first vertex.
 
 {{< space 50 >}}
 
@@ -46,7 +46,7 @@ To achieve the second point, one can simply start from a random vertex of the po
 
 {{< twocolumns 20 mobile >}}
     {{< column >}}
-        The database contains a function which outputs a string representing the SVG plan of any given floor:
+        The database contains a stored procedure which outputs a string representing the SVG plan of any given floor:
         <ul>
             <li><span style="color: #4aa1ff;">Blue</span> segments are windows</li>
             <li><span style="color: #3cc961;">Green</span> segments are doors</li>
@@ -63,7 +63,7 @@ To achieve the second point, one can simply start from a random vertex of the po
 
 > **Estimate the magnitude of an earthquake**
 
-In case of an earthquake, a database administrator can launch a stored procedure that estimates its magnitude using data gathered from the accelerometers of nearby buildings
+In case of an earthquake, a database administrator can launch a stored procedure that estimates its magnitude using data gathered from the accelerometers of nearby buildings.
 
 First, every (nearby) building computes a rough estimate of the magnitude by mapping the average measured acceleration to a magnitude value of the following table:
 

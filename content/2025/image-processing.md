@@ -31,7 +31,7 @@ weight: 3
 
 > **Introduction**
 
-In this project, I implemented a digital circuit capable of performing a fundamental image-processing task: **combining adjacent pixels with different weights**.
+In this project, I implemented a digital circuit capable of performing a common image-processing task: **combining adjacent pixels with different weights**.
 
 {{< space 40 >}}
 
@@ -45,13 +45,17 @@ The work began with an exploration of potential applications and architectural o
 
 > **Verification**
 
-Once the design was completed, the circuit was thoughtfully validated through the simulation and the **analysis the waveform of the input and output ports** of every component (done using `ModelSim-Intel© FPGAs Standard Edition 2020.1`).
+Once the design was completed, the circuit was validated through the **analysis of the simulated waveforms** of every component (done using `ModelSim-Intel© FPGAs Standard Edition 2020.1`).
 
 {{< figure src="/2025/image-processing/verification-main-circuit.png" caption="Waveform of the input and output ports of the circuit using a simple 2x3 test ROM" >}}
 
 {{< space 40 >}}
 
-Moreover, both to check its correctness and to gain a deeper understanding of its behavior, the circuit was also tested using sample images. This was achieved by simulating the circuit, exporting the waveform of the output port, and, with a scripting language (i.e., python), parsing the pixels and constructing the output image.
+Moreover, the circuit was tested using real images. This was achieved by:
+1. Converting the selected image into a VHDL ROM
+2. Simulating the circuit
+3. Exporting the waveform of the output port
+4. Parsing the pixels and constructing the output image
 
 {{< twocolumns 20 >}}
 

@@ -35,7 +35,7 @@ Starting with a naïve CPU renderer, we progressively optimized the application 
 
 Then, we ported the C code to CUDA, a task that required the conversion of recursive functions and a completely different thread organization. 
 
-Finally, we optimized the CUDA code by introducing a tile-based thread scheduling and better data alignment, culminating in a renderer capable of achieving 65 FPS at 1080p, roughly 28 times faster than the best CPU implementation.
+Finally, we optimized the CUDA code by introducing a tile-based thread scheduling algorithm and a better data alignment strategy, culminating in a renderer capable of achieving `65 FPS @ 1080p` on a (simple) test scene, roughly 28 times faster than the best CPU implementation.
 
 {{< space 40 >}}
 

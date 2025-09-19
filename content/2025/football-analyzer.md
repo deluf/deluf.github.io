@@ -30,18 +30,15 @@ tags:
 
 {{< space 20 >}}
 
-In this group project, we developed a real-time vision-based football analysis system using a fine-tuned YOLOv11 object detection model, capable of identifying players, goalkeepers, referees, and the ball directly from high-resolution match footage.
+In this group project, we developed a real-time football analysis system using a **fine-tuned `YOLOv11`** object detection model, capable of identifying players, goalkeepers, referees, and the ball directly from live match footage.
 
-The system achieves a mean Average Precision (mAP@50) of 0.827 across the main object classes and runs at 30 FPS on a consumer-grade RTX 2060 Super GPU, demonstrating the feasibility of low-cost, real-time sports analytics.
+To achieve this, we built two separate components:
 
-Two core components were built:
+- **Object detector**: A `YOLOv11` model fine-tuned on a dataset of 400 labeled football frames. Using 5-fold cross-validation, we selected the ‘m’ variant for its balanced accuracy and efficiency. Despite great performance on most classes, ball detection remained a challenge due to its small size and visual ambiguity (e.g., penalty spots, players’ heads)
 
-- **Object detector**: A YOLOv11 model was fine-tuned using a manually cleaned and augmented dataset of 400 labeled football frames. Using 5-fold cross-validation, the ‘m’ variant was selected for its balanced accuracy and efficiency. Despite excellent performance on most classes, ball detection remained a challenge due to its small size and visual ambiguity.
+- **Team classificator**: `K-means` clustering applied to the color features (hue and saturation) of the upper half of each bounding box (where the player's shirt is most likely located)
 
-- **Team classificator**: An unsupervised pipeline was designed to assign detected players to teams using K-means clustering on torso color features. Without prior knowledge of jersey styles, the system achieved visually coherent team groupings, generalizable across matches.
-
-The project highlights the potential computer vision-driven sports intelligence in accessible environments such as local clubs or amateur leagues, and lays the groundwork for more advanced features like event detection and spatial reasoning in future versions.
-
+The system achieves a mean Average Precision (`mAP@50`) of \(0.827\) across the main object classes and runs at `30 FPS` on a consumer-grade `RTX 2060 Super GPU`.
 
 {{< space 40 >}}
 

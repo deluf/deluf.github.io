@@ -33,11 +33,11 @@ tags:
 
 {{< space 20 >}}
 
-In this group project, we studied the effectiveness of a maximum-coding-rate scheduling algorithm for a satellite-based communication system, by means of the throughput, the mean packet delay, and the mean frame utilization.
+In this group project, we studied the effectiveness of a maximum-coding-rate **scheduling algorithm for a satellite-based communication system**, by means of the throughput, the mean packet delay, and the mean frame utilization.
 
-The simulator was developed with the `OMNeT++` framework, and was thoughtfully validated using: detailed debugging statements, runtime error handling, memory leak analysis, code profiling, and both intuitive and mathematical proofs for a wide range of behavioral tests.
+The simulator was developed with the `OMNeT++` framework, and was validated using detailed debugging statements, runtime error handling, memory leak analysis, code profiling, and both intuitive and mathematical proofs for a wide range of behavioral tests.
 
-Finally, using the simulator we just built, we tested the system under light, normal, and heavy working conditions. The obtained results were thoroughly analyzed using statistically sound methods, leading to well-founded conclusions about the system.
+Finally, using the simulator we just built, we tested the system under light, normal, and heavy working conditions. The obtained results were analyzed using statistically sound methods, which allowed us to **draw quantifiable conclusions** about the system (e.g., \(X\) is true with \(Y\,\%\) confidence).
 
 {{< space 40 >}}
 
