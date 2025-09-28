@@ -12,8 +12,6 @@ cover:
 tags:
 - Python
 - Javascript
-- HTML
-- CSS
 ---
 
 ---

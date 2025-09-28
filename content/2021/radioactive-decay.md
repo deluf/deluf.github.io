@@ -10,9 +10,6 @@ cover:
   image: 2021/radioactive-decay/preview.png
 
 tags:
-- Html
-- Css
-- Javascript
 ---
 
 ---

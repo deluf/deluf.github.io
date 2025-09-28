@@ -10,8 +10,6 @@ cover:
   image: 2023/codfish-2000/preview.png
 
 tags:
-- Html
-- Css
 - Javascript
 - Php
 
