@@ -11711,7 +11711,7 @@
  <g partID="855123730">
   <g transform="translate(239.735,104.512)">
    <g id="breadboard" >
-    <text fill="#000000" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="18.6526" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Horn</text>
+    <text fill="#666666" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="18.6526" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Horn</text>
    </g>
   </g>
  </g>
@@ -11725,7 +11725,7 @@
  <g partID="855123800">
   <g transform="translate(518.902,194.468)">
    <g id="breadboard" >
-    <text fill="#000000" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="57.4129" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Forward/Backward motor</text>
+    <text fill="#666666" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="57.4129" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Forward/Backward motor</text>
    </g>
   </g>
  </g>
@@ -11767,21 +11767,21 @@
  <g partID="855128830">
   <g transform="translate(534.938,22.4074)">
    <g id="breadboard" >
-    <text fill="#000000" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="37.6038" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Left/Right motor</text>
+    <text fill="#666666" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="37.6038" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Left/Right motor</text>
    </g>
   </g>
  </g>
  <g partID="855129940">
   <g transform="translate(407.25,353.683)">
    <g id="breadboard" >
-    <text fill="#000000" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="42.8951" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Powers the motors</text>
+    <text fill="#666666" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="42.8951" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Powers the motors</text>
    </g>
   </g>
  </g>
  <g partID="855129960">
   <g transform="translate(179.073,351.369)">
    <g id="breadboard" >
-    <text fill="#000000" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="50.7421" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Powers the electronics</text>
+    <text fill="#666666" font-family="Droid Sans" font-size="11" font-weight="400" id="label" stroke-width="0" text-anchor="middle" x="50.7421" xml:space="preserve"  xmlns:xml="http://www.w3.org/XML/1998/namespace" y="11.6211">Powers the electronics</text>
    </g>
   </g>
  </g>
