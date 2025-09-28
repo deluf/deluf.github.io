@@ -40,7 +40,7 @@ params:
 
   homeInfoParams:
     Title: Francesco De Lucchini
-    Content: "Computer Engineering student at the University of Pisa, Italy 🇮🇹<div style=\"display: flex\"><div style=\"display: flex; align-items: center; height: 22px; margin-right: .5em\">Feel free to contact me at</div><img src=/email.png alt=\"email\" height=22 width=280/></div>"
+    Content: "Computer Engineering student at the University of Pisa, Italy 🇮🇹<div style=\"display: flex; flex-wrap: wrap; align-items: center; gap: .5em\"><div style=\"display: flex; align-items: center; height: 22px\">Feel free to contact me at</div><img src=/email.png alt=\"email\" height=22 width=280 style=\"max-width:100%; height:auto\"></div>"
 
   socialIcons:
     - name: "github"
