@@ -498,3 +498,5 @@ img.in-text {
 .post-tags-list li  .OpenSSL { background-image: url("/tags/openssl.png"); }
 .post-footer li     .ComputerVision,
 .post-tags-list li  .ComputerVision { background-image: url("/tags/computervision.png"); }
+.post-footer li     .Android,
+.post-tags-list li  .Android { background-image: url("/tags/android.png"); }

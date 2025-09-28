@@ -1,0 +1,49 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="eaCfmO3Z0FiwNkaxdBmg">
+    <mxGraphModel dx="2066" dy="1244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LaCf-eDokxESVSKsWOqV-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.deepspecs.com%2Fwp-content%2Fuploads%2F2019%2F02%2F10-alcatel3-2019-deepspecs-com-600x600.jpg&amp;f=1&amp;nofb=1&amp;ipt=2ed8b5a18f62ba826393ff21bf6c4370e11e06fa678bfcbaf621adddba2635e0;clipPath=inset(0% 25% 0% 25.33%);fontFamily=Menlo;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="750.01" y="542.83" width="172.43" height="347.17" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsnapeda.s3.amazonaws.com%2Fpartpics%2FArduino_ARDUINO_UNO_REV3_96908.jpg&amp;f=1&amp;nofb=1&amp;ipt=30f35f3d340c5dcfb8e2257194c3e79df1586c3536a6d7b77da31762480ea6d1;rotation=90;fontFamily=Menlo;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="628" y="999.9999999999999" width="324.78" height="243.59" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-alpha.figma.com%2Fhub%2Ffile%2F1003421947%2Ff110c3a8-b2c8-4e56-96d2-66f6faa6b20e-cover.png&amp;f=1&amp;nofb=1&amp;ipt=b0313cbc9b8d6d4f95484ed874e744a8be16511bc20498684edc28390cac33fb;clipPath=inset(14.67% 20.67% 14% 20%);fontFamily=Menlo;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="1053" y="880" width="687.53" height="413.29" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-5" value="" style="html=1;outlineConnect=0;fillColor=#f5f5f5;strokeColor=#666666;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.bus;gradientDirection=north;perimeter=backbonePerimeter;backboneSize=20;fontColor=#333333;rotation=30;fontFamily=Menlo;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="885.63" y="831.33" width="285.31" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-8" value="&lt;font&gt;Tailscale&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font&gt;tunnel&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontFamily=Menlo;" parent="1" vertex="1">
+          <mxGeometry x="930" y="893.3299999999999" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-10" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-1.webcatalog.io%2Fcatalog%2Ftailscale%2Ftailscale-icon.png&amp;f=1&amp;nofb=1&amp;ipt=b8887574f2bf3df6a537f87c2b299b208b0749363d1ed0d055cd2bbd05952fd6;fontFamily=Menlo;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="976.29" y="785.23" width="104" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-11" value="" style="html=1;outlineConnect=0;fillColor=#f5f5f5;strokeColor=#666666;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.bus;gradientDirection=north;perimeter=backbonePerimeter;backboneSize=20;fontColor=#333333;rotation=90;fontFamily=Menlo;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="784.67" y="921.23" width="103.11" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-13" value="&lt;span&gt;Serial&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;over&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;USB&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontFamily=Menlo;" parent="1" vertex="1">
+          <mxGeometry x="700" y="921.23" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-14" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcreazilla-store.fra1.digitaloceanspaces.com%2Ficons%2F3429976%2Fnetwork-4g-icon-md.png&amp;f=1&amp;nofb=1&amp;ipt=2938df548f11acf69435af035b47f9b5f528d1a798e74900c23e2bea123b0cff;fontFamily=Menlo;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="920" y="700" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LaCf-eDokxESVSKsWOqV-15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.creativefabrica.com%2Fwp-content%2Fuploads%2F2023%2F05%2F19%2FWifi-icon-Graphics-70002790-1.jpg&amp;f=1&amp;nofb=1&amp;ipt=31d3b2a5f75972bf9c9abef73dc6edf1603e953ee0dbe047fd970f1bc5d0fae2;clipPath=inset(29% 7.67% 29% 7%);fontFamily=Menlo;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="1150" y="860" width="91.42" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NqTStlhuAGe8D7Ozlu_F-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.extra.com%2Fs%2Faurora%2F00194580_800%2FPS4-Dualshock-4-wireless-controller-V2%3Flocale%3Den-GB%2Cen-*%2C*&amp;f=1&amp;nofb=1&amp;ipt=f77bbfbdd1e1031cbf0862ef2c5135c6c1036694e03d1d7b2b4c3ab9cf76e60a;clipPath=inset(5.61% 5.67% 3.66% 7%);fontFamily=Menlo;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="550.49" width="288.07" height="204.51" as="geometry" />
+        </mxCell>
+        <mxCell id="NqTStlhuAGe8D7Ozlu_F-3" value="" style="html=1;outlineConnect=0;fillColor=#f5f5f5;strokeColor=#666666;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.bus;gradientDirection=north;perimeter=backbonePerimeter;backboneSize=20;fontColor=#333333;rotation=90;fontFamily=Menlo;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1402.15" y="775.73" width="263.76" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NqTStlhuAGe8D7Ozlu_F-4" value="&lt;span&gt;USB&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontFamily=Menlo;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="787.5" width="200" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
