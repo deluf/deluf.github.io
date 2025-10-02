@@ -3,7 +3,6 @@ title: UniPi++
 date: "2025-09-25T00:00:00+01:00"
 draft: false
 description: "Browser extension that enhances the University of Pisa students portal, published on both Chorme Web Store and Mozilla Addons"
-# TODO: quando ci saranno (spero) statistiche decenti da flexare, aggiungile alla descrizione (e in giro da qualche parte)
 
 cover:
   alt: Preview of UniPi++
@@ -19,6 +18,8 @@ tags:
 - [Code](https://github.com/deluf/unipi-plus-plus)
 <a href="https://chromewebstore.google.com/detail/unipi++/iblkplielknafpegjacgjbpgjgdcnkij"><img src="/2025/unipi-plus-plus/chrome.png" alt="Chrome web store banner"></a>
 <a href="https://addons.mozilla.org/addon/unipi/"><img src="/2025/unipi-plus-plus/firefox.webp" alt="Mozilla add-on banner"></a>
+
+[![Stars history chart](https://api.star-history.com/svg?repos=deluf/unipi-plus-plus&type=Date)](https://www.star-history.com/#deluf/unipi-plus-plus&Date)
 
 ---
 
