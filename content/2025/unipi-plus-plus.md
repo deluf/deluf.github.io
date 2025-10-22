@@ -2,7 +2,7 @@
 title: UniPi++
 date: "2025-09-25T00:00:00+01:00"
 draft: false
-description: "Browser extension that enhances the University of Pisa students portal, published on both Chorme Web Store and Mozilla Addons"
+description: "**Browser extension** that adds detailed statistics to the University of Pisa's student transcript page; reviewed and accepted by both Chorme Web Store and Mozilla Addons"
 
 cover:
   alt: Preview of UniPi++

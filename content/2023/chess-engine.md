@@ -1,13 +1,13 @@
 ---
-title: Codfish 2000
+title: Chess engine
 date: "2023-06-30T00:00:00+01:00"
 draft: false
 
-description: "**Javascript** chess engine written from scratch, with a simple **PHP**-**MySQL** back-end that allows users to store analyzed positions"
+description: "Javascript chess engine based on the minimax algorithm with alpha-beta pruning optimization and an hand-crafted PeSTO evaluation function"
 
 cover:
-  alt: Preview of Codfish 2000
-  image: 2023/codfish-2000/preview.png
+  alt: Preview of Chess engine
+  image: 2023/chess-engine/preview.png
 
 tags:
 - Javascript
@@ -20,8 +20,8 @@ weight: 2
 
 > **Resources**
 
-- [Code](https://github.com/deluf/codfish-2000)
-- [Play against the engine!](/2023/codfish-2000/demo/)
+- [Code](https://github.com/deluf/chess-engine)
+- [Play against the engine!](/2023/chess-engine/demo/)
 
 ---
 
@@ -45,12 +45,12 @@ Registered users can save the result of each analysis to a database and can also
 
 > **Play against the CPU**
 
-{{< video "/2023/codfish-2000/play.mp4" >}}
+{{< video "/2023/chess-engine/play.mp4" >}}
 
 {{< space 25 >}}
 
 > **Analyze position**
 
-{{< video "/2023/codfish-2000/analyze.mp4" >}}
+{{< video "/2023/chess-engine/analyze.mp4" >}}
 
 {{< space 50 >}}

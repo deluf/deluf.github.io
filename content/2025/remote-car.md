@@ -3,7 +3,7 @@ title: Remote car
 date: "2025-08-14T00:00:00+01:00"
 draft: false
 
-description: "An **RC car controlled over the internet** (from anywhere in the world) with an arduino, an android phone, and a PS4 controller"
+description: "RC car retrofitted with an arduino and an android phone to allow for **over-the-internet remote control** (from anywhere in the world)"
 
 cover:
   alt: Preview of Remote car
@@ -130,5 +130,3 @@ The computer runs a multi-process python back-end. The GUI is organized in tiles
 - **Latency** is the main limitation of this architecture. You pay the price of being able to control the car from anywhere in the world with a higher latency (50~100 ms) compared to radio control. The main contributor to latency is network latency between the phone and the controller: even with a 5G-capable phone and a controller geographically close to the phone, this kind of latency will never get lower than a few tens of milliseconds, which is enough to comfortably control the car in most situations but not enough for extremely low latency applications such as high speed FPV control
 
 - **Video stabilization** is another limitation of the current architecture. This issue can either be solved in software (requires a buffer of at least a few frames, i.e., more latency) or in hardware (outside the scope of this project). Overall it's not that big of a deal imo
-
-- **Software** i aint no android dev - you can switch cameras but only twice, then it stops working. There probably are other bugs there (and also in the python code, which is not great by any means). Anyway, for a prototype it's more than enough

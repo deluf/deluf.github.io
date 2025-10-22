@@ -3,7 +3,7 @@ title: Digital signature server
 date: "2025-06-30T00:00:00+01:00"
 draft: false
 
-description: "**C11 digital signature server** implemented using the **OpenSSL** and **libsodium** crypto libraries"
+description: "**Key management server** featuring a custom handshake protocol providing mutual authentication, perfect forward secrecy, confidentiality, integrity, and replay protection"
 
 cover:
   alt: Preview of Digital signature server

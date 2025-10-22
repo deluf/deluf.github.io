@@ -1,13 +1,13 @@
 ---
-title: Football analyzer
+title: Live football analyzer
 date: "2025-07-23T00:00:00+01:00"
 draft: false
 
-description: "Computer vision model based on **YOLOv11** that analyzes football matches"
+description: "Machine learning pipeline based on a **fine-tuned YOLOv11** object detection model capable of identifying players, goalkeepers, referees, and the ball, directly from live match footage"
 
 cover:
-  alt: Preview of Football analyzer
-  image: 2025/football-analyzer/preview.jpg
+  alt: Preview of Live football analyzer
+  image: 2025/live-football-analyzer/preview.jpg
 
 tags:
 - ComputerVision
@@ -18,9 +18,9 @@ tags:
 
 > **Resources**
 
-- [Code](https://github.com/deluf/football-analyzer)
-- [Paper](/2025/football-analyzer/paper.pdf)
-- [Presentation](/2025/football-analyzer/presentation.pdf)
+- [Code](https://github.com/deluf/live-football-analyzer)
+- [Paper](/2025/live-football-analyzer/paper.pdf)
+- [Presentation](/2025/live-football-analyzer/presentation.pdf)
 
 ---
 
@@ -44,22 +44,22 @@ The system achieves a mean Average Precision (`mAP@50`) of \(0.827\) across the 
 
 > **Pictures**
 
-{{< figure src="/2025/football-analyzer/aps.png" caption="Mean ± standard deviation of AP@50 per class, for each candidate model" >}}
+{{< figure src="/2025/live-football-analyzer/aps.png" caption="Mean ± standard deviation of AP@50 per class, for each candidate model" >}}
 
 {{< space 50 >}}
 
-{{< figure src="/2025/football-analyzer/confusion-matrix.png" caption="Normalized confusion matrix for the selected model 'm', indicating class-wise accuracy and common misclassifications" >}}
+{{< figure src="/2025/live-football-analyzer/confusion-matrix.png" caption="Normalized confusion matrix for the selected model 'm', indicating class-wise accuracy and common misclassifications" >}}
 
 {{< space 50 >}}
 
-{{< figure src="/2025/football-analyzer/curves.png" caption="Precision–Recall curves for the selected model 'm'. A confidence threshold near 0.2 offers a good trade-off between precision and recall" >}}
+{{< figure src="/2025/live-football-analyzer/curves.png" caption="Precision–Recall curves for the selected model 'm'. A confidence threshold near 0.2 offers a good trade-off between precision and recall" >}}
 
 {{< space 50 >}}
 
-{{< figure src="/2025/football-analyzer/prediction.jpg" caption="Sample prediction made by the selected model 'm'" >}}
+{{< figure src="/2025/live-football-analyzer/prediction.jpg" caption="Sample prediction made by the selected model 'm'" >}}
 
 {{< space 50 >}}
 
 > **See it in action**
 
-{{< video "/2025/football-analyzer/action.mp4" >}}
+{{< video "/2025/live-football-analyzer/action.mp4" >}}

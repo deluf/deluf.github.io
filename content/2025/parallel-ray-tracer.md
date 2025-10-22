@@ -1,13 +1,13 @@
 ---
-title: Parallel ray tracing
+title: Parallel ray tracer
 date: "2025-05-21T00:00:00+01:00"
 draft: false
 
-description: "**Fine tuning** and **profiling** of a **parallel ray tracing application** on both **CPU** and **GPU** hardware"
+description: "Multi-threaded ray tracer implemented from scratch in C and then accelerated using CUDA"
 
 cover:
-  alt: Preview of Parallel ray tracing
-  image: 2025/parallel-ray-tracing/preview.png
+  alt: Preview of Parallel ray tracer
+  image: 2025/parallel-ray-tracer/preview.png
 
 tags:
 - C
@@ -19,7 +19,8 @@ tags:
 
 > **Resources**
 
-- [Presentation](/2025/parallel-ray-tracing/presentation.pdf)
+- [Code](https://github.com/deluf/parallel-ray-tracer)
+- [Presentation](/2025/parallel-ray-tracer/presentation.pdf)
 
 ---
 
@@ -41,18 +42,18 @@ Finally, we optimized the CUDA code by introducing a tile-based thread schedulin
 
 > **Pictures**
 
-{{< figure src="/2025/parallel-ray-tracing/preview.png" caption="An example of rendered scene" >}}
+{{< figure src="/2025/parallel-ray-tracer/preview.png" caption="An example of rendered scene" >}}
 
 {{< space 50 >}}
 
-{{< figure src="/2025/parallel-ray-tracing/ray-intersection.png" caption="A visualization of the ray-triangle intersection process" >}}
+{{< figure src="/2025/parallel-ray-tracer/ray-intersection.png" caption="A visualization of the ray-triangle intersection process" >}}
 
 {{< space 50 >}}
 
-{{< figure src="/2025/parallel-ray-tracing/compiler-flags-speedup.png" caption="Speedup of different compiler flags with respect to GCC's default (CPU's naïve version)" >}}
+{{< figure src="/2025/parallel-ray-tracer/compiler-flags-speedup.png" caption="Speedup of different compiler flags with respect to GCC's default (CPU's naïve version)" >}}
 
 {{< space 50 >}}
 
-{{< figure src="/2025/parallel-ray-tracing/final-recap-speedup.png" caption="Speedup of every improved version we developed with respect to the first one" >}}
+{{< figure src="/2025/parallel-ray-tracer/final-recap-speedup.png" caption="Speedup of every improved version we developed with respect to the first one" >}}
 
 {{< space 50 >}}

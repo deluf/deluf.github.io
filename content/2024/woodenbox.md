@@ -3,7 +3,7 @@ title: Woodenbox
 date: "2024-03-06T00:00:00+01:00"
 draft: false
 
-description: "**Home server** running Proxmox VE on an **old laptop** moved inside of a custom wooden case. The server is booted up remotely by **telegram bot** hosted on an **ESP32** and is accessed via a **WireGuard VPN**"
+description: "An old laptop moved into a custom wooden case, repurposed as a personal **home lab**"
 
 cover:
   alt: Preview of Woodenbox

@@ -1,13 +1,13 @@
 ---
-title: Distributed inverted index
+title: Distributed inverted index builder
 date: "2025-06-05T00:00:00+01:00"
 draft: false
 
-description: "**Distributed application** that builds an inverted index structure implemented using both the **Hadoop** and **Spark** frameworks"
+description: "**Distributed application** that builds an inverted index data structure; implemented using both the **Hadoop** and **Spark** frameworks"
 
 cover:
-  alt: Preview of Inverted index
-  image: 2025/inverted-index/preview.png
+  alt: Preview of Distributed inverted index builder
+  image: 2025/distributed-inverted-index-builder/preview.png
 
 tags:
 - Hadoop
@@ -20,8 +20,8 @@ tags:
 
 > **Resources**
 
-- [Code](https://github.com/deluf/inverted-index)
-- [Documentation](/2025/inverted-index/documentation.pdf)
+- [Code](https://github.com/deluf/distributed-inverted-index-builder)
+- [Documentation](/2025/distributed-inverted-index-builder/documentation.pdf)
 
 ---
 
@@ -46,10 +46,10 @@ Thanks to the limited RAM of the nodes (`7 GB`), the Hadoop solution showed perf
 
 > **Pictures**
 
-{{< figure src="/2025/inverted-index/combiners.png" caption="Execution times of different combiner designs for the Hadoop solution as the size of the dataset increases" >}}
+{{< figure src="/2025/distributed-inverted-index-builder/combiners.png" caption="Execution times of different combiner designs for the Hadoop solution as the size of the dataset increases" >}}
 
 {{< space 50 >}}
 
-{{< figure src="/2025/inverted-index/final-chart.png" caption="Execution times of the three different solutions as the size of the dataset increases" >}}
+{{< figure src="/2025/distributed-inverted-index-builder/final-chart.png" caption="Execution times of the three different solutions as the size of the dataset increases" >}}
 
 {{< space 50 >}}
