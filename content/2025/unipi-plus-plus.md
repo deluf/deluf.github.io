@@ -2,70 +2,82 @@
 title: UniPi++
 date: "2025-09-25T00:00:00+01:00"
 draft: false
-description: "**Browser extension** that adds detailed statistics to the University of Pisa's student transcript page; reviewed and accepted by both Chorme Web Store and Mozilla Addons"
+description: "**Browser extension** that adds detailed statistics to the University of Pisa's student transcript page; reviewed and accepted by both **Chorme Web Store** and **Mozilla Addons**"
 
 cover:
   alt: Preview of UniPi++
-  image: /2025/unipi-plus-plus/almalaurea.png
+  image: /2025/unipi-plus-plus/home.png
 
 tags:
-- Python
 - Javascript
+- Python
 ---
 
 ---
 > **Resources**
 - [Code](https://github.com/deluf/unipi-plus-plus)
-<a href="https://chromewebstore.google.com/detail/unipi++/iblkplielknafpegjacgjbpgjgdcnkij"><img src="/2025/unipi-plus-plus/chrome.png" alt="Chrome web store banner"></a>
-<a href="https://addons.mozilla.org/addon/unipi/"><img src="/2025/unipi-plus-plus/firefox.webp" alt="Mozilla add-on banner"></a>
 
-[![Stars history chart](https://api.star-history.com/svg?repos=deluf/unipi-plus-plus&type=Date)](https://www.star-history.com/#deluf/unipi-plus-plus&Date)
+<!-- [![Stars history chart](https://api.star-history.com/svg?repos=deluf/unipi-plus-plus&type=Date)](https://www.star-history.com/#deluf/unipi-plus-plus&Date) -->
+
+---
+
+<div style="display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap;">
+    <img src="/2025/unipi-plus-plus/icon.png" alt="icon" width="120">
+    <img src="/2025/unipi-plus-plus/text.png" alt="title" width="400">
+</div>
+
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+    <div style="display: flex; justify-content: center; align-items:center; flex-direction: column;">
+        <a href="https://chromewebstore.google.com/detail/unipi++/iblkplielknafpegjacgjbpgjgdcnkij">
+            <img src="/2025/unipi-plus-plus/chrome.png" height="55" alt="Chrome web store banner">
+        </a>
+        <img src="https://img.shields.io/chrome-web-store/users/iblkplielknafpegjacgjbpgjgdcnkij?logo=google-chrome&logoColor=white&label=Active%20students&color=green" alt="Chrome users" height="25">
+    </div>
+    <div style="display: flex; justify-content: center; align-items:center; flex-direction: column;">
+        <a href="https://addons.mozilla.org/addon/unipi/">
+            <img src="/2025/unipi-plus-plus/firefox.webp" height="55" alt="Mozilla add-on banner">
+        </a>
+        <img src="https://img.shields.io/amo/users/unipi?logo=firefox&logoColor=white&label=Active%20students&color=orange" alt="Firefox users" height="25">
+    </div>
+</div>
 
 ---
 
 ## Highlights
 
-> **Overview**
-
-**UniPi++** is a browser extension (Chromium-based & Firefox) that enhances the University of Pisa student portal by adding detailed statistics and insights about both completed and future exams
-
 ---
 
-> **Features**
+A dashboard shows the weighted average, the arithmetic average, the predicted final grade, the grade distribution chart and the grade progression chart
 
-i. **Comprehensive dashboard**
+<img src="/2025/unipi-plus-plus/home.png" alt="home" height=400>
 
-A visually pleasing dashboard that shows your weighted average, arithmetic average, predicted final grade, grade distribution chart (histogram) and grade progression chart (scatterplot)
-
-![home](/2025/unipi-plus-plus/home.png)
-
-- In particular:
+- Specifically:
     
     - Metrics can be calculated per academic year or across all exams
     
     - Individual exams can be excluded with simple checkboxes
     
-    ![home](/2025/unipi-plus-plus/checkbox.png)
+    <img src="/2025/unipi-plus-plus/checkbox.png" alt="checkbox" height=250>
     
     - All parameters (e.g., honors grade value, credit exclusions) and even visual settings (e.g., color map) can be fully customized via the extension’s popup menu
     
-    ![home](/2025/unipi-plus-plus/popup.png)
+    <img src="/2025/unipi-plus-plus/popup.png" alt="popup" height=300>
 
-ii. **Metrics comparison**
+---
 
-A dropdown menu wich allows you to compare your metrics with the average results of any degree program offered by the University of Pisa
+A dropdown menu allows you to compare your metrics with the average results of any degree program offered by the University of Pisa
 
-![home](/2025/unipi-plus-plus/almalaurea.png)
+<img src="/2025/unipi-plus-plus/almalaurea.png" alt="almalaurea" height=250>
 
 > The reference data comes from publicly available statistics on [www.almalaurea.it](https://www.almalaurea.it)
 
-iii. **Exam forecast**
+---
 
-Simulate how your average would change depending on the grades of your upcoming exams
+An exam forecast section simulates how your average could change depending on the grades you think you will get on your upcoming exams
 
-![home](/2025/unipi-plus-plus/forecast.png)
+<img src="/2025/unipi-plus-plus/forecast.png" alt="forecast" height=250>
 
-> How is the final grade predicted ? A quadratic regression model is applied, trained on the relationship between average exam grade and average final grade across all degree programs offered by the University of Pisa in the years 2022, 2023, and 2024 ![home](/2025/unipi-plus-plus/predictor.png)
+> How is the final grade predicted ? A quadratic regression model is applied, trained on the relationship between average exam grade and average final grade across all degree programs offered by the University of Pisa in the years 2022, 2023, and 2024 <img src="/2025/unipi-plus-plus/predictor.png" alt="predictor" height=350>
 
 ---
 
