@@ -22,7 +22,7 @@ tags:
 ---
 
 <div style="display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap;">
-    <img src="/2025/unipi-plus-plus/icon.png" alt="icon" width="120">
+    <img src="/2025/unipi-plus-plus/preview.png" alt="icon" width="120">
     <img src="/2025/unipi-plus-plus/text.png" alt="title" width="400">
 </div>
 
