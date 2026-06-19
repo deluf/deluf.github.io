@@ -19,7 +19,7 @@ weight: 1
 
 ---
 > **Resources**
-- [Code](https://gitfront.io/r/deluf/kN8UY6dusMww/remote-car/)
+- [Code](https://github.com/deluf/remote-car)
 ---
 
 ## Highlights
