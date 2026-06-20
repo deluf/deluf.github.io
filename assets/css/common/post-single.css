@@ -501,4 +501,6 @@ img.in-text {
 .post-footer li     .Android,
 .post-tags-list li  .Android { background-image: url("/tags/android.png"); }
 .post-footer li     .Erlang,
-.post-tags-list li  .Erlang{ background-image: url("/tags/erlang.png"); }
+.post-tags-list li  .Erlang { background-image: url("/tags/erlang.png"); }
+.post-footer li     .ContainerLab,
+.post-tags-list li  .ContainerLab{ background-image: url("/tags/containerlab.png"); }
