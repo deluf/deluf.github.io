@@ -12,8 +12,6 @@ cover:
 tags:
 - Javascript
 - Php
-
-weight: 2
 ---
 
 ---

@@ -500,3 +500,5 @@ img.in-text {
 .post-tags-list li  .ComputerVision { background-image: url("/tags/computervision.png"); }
 .post-footer li     .Android,
 .post-tags-list li  .Android { background-image: url("/tags/android.png"); }
+.post-footer li     .Erlang,
+.post-tags-list li  .Erlang{ background-image: url("/tags/erlang.png"); }
